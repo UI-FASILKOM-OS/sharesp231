@@ -2,4 +2,6 @@
 
 SHARE SysProg 231
 
-### Versi 01 --- 19-Feb-2023 (cbkadal)
+Please update ATTANDENCE everyweek!
+
+### Versi 02 --- 26-Feb-2023 (cbkadal)
