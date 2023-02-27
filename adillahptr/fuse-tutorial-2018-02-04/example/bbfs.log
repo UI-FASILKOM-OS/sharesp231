@@ -1,0 +1,41 @@
+
+bb_init()
+    conn:
+    proto_major = 7
+    proto_minor = 37
+    async_read = 1
+    max_write = 131072
+    max_readahead = 131072
+    capable = 00000ffb
+    want = 00000010
+    max_background = 0
+    congestion_threshold = 0
+    context:
+    fuse = 16bc3780
+    uid = 0
+    gid = 0
+    pid = 0
+    private_data = 16bc22a0
+    logfile = 16bc32d0
+    rootdir = /home/adillahptr/fuse-tutorial-2018-02-04/example/rootdir
+    umask = 00000
+
+bb_getattr(path="/", statbuf=0x00fbdc10)
+    bb_fullpath:  rootdir = "/home/adillahptr/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/adillahptr/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 795302
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x63fc737b
+    st_mtime = 0x63fc737b
+    st_ctime = 0x63fc737b
+
+bb_destroy(userdata=0x16bc22a0)
