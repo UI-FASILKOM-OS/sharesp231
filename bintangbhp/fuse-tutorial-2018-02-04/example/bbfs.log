@@ -1,0 +1,2213 @@
+
+bb_init()
+    conn:
+    proto_major = 7
+    proto_minor = 38
+    async_read = 1
+    max_write = 131072
+    max_readahead = 131072
+    capable = 00000ffb
+    want = 00000010
+    max_background = 0
+    congestion_threshold = 0
+    context:
+    fuse = 25ab47c0
+    uid = 0
+    gid = 0
+    pid = 0
+    private_data = 25ab32a0
+    logfile = 25ab42d0
+    rootdir = /home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir
+    umask = 00000
+
+bb_getattr(path="/", statbuf=0x572d2c10)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1047158
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x640321e3
+    st_mtime = 0x64031f41
+    st_ctime = 0x64031f41
+
+bb_statfs(path="/", statv=0x57af5c70)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+    statvfs returned 0
+    sv:
+    f_bsize = 4096
+    f_frsize = 4096
+    f_blocks = 5902107
+    f_bfree = 3889210
+    f_bavail = 3583060
+    f_files = 1512560
+    f_ffree = 1370660
+    f_favail = 1370660
+    f_fsid = 880379028329240947
+    f_flag = 0x00001000
+    f_namemax = 255
+
+bb_getattr(path="/bintangbhp.txt", statbuf=0x572d2c40)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/bintangbhp.txt", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/bintangbhp.txt"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_mknod(path="/bintangbhp.txt", mode=0100644, dev=0)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/bintangbhp.txt", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/bintangbhp.txt"
+    open returned 5
+    close returned 0
+
+bb_getattr(path="/bintangbhp.txt", statbuf=0x572d2c40)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/bintangbhp.txt", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/bintangbhp.txt"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1047458
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 4096
+    st_blocks = 0
+    st_atime = 0x640324c4
+    st_mtime = 0x640324c4
+    st_ctime = 0x640324c4
+
+bb_open(path"/bintangbhp.txt", fi=0x57af5cf0)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/bintangbhp.txt", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/bintangbhp.txt"
+    open returned 5
+    fi:
+    flags = 0x00008801
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0x0000000000000000
+
+bb_flush(path="/bintangbhp.txt", fi=0x572d2cf0)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x00000005
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0xe97f2ed93eed28d4
+
+bb_utime(path="/bintangbhp.txt", ubuf=0x57af5aa0)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/bintangbhp.txt", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/bintangbhp.txt"
+    utime returned 0
+
+bb_getattr(path="/bintangbhp.txt", statbuf=0x57af5b70)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/bintangbhp.txt", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/bintangbhp.txt"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1047458
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 4096
+    st_blocks = 0
+    st_atime = 0x640324c4
+    st_mtime = 0x640324c4
+    st_ctime = 0x640324c4
+
+bb_flush(path="/bintangbhp.txt", fi=0x572d2cf0)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x00000005
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0xe97f2ed93eed28d4
+
+bb_release(path="/bintangbhp.txt", fi=0x57af5cf0)
+    fi:
+    flags = 0x00008801
+    fh_old = 0x00000005
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0x0000000000000000
+    close returned 0
+
+bb_getattr(path="/", statbuf=0x572d2c10)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1047158
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x640321e3
+    st_mtime = 0x640324c4
+    st_ctime = 0x640324c4
+
+bb_getxattr(path = "/", name = "security.selinux", value = 0x50001e30, size = 255)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_getxattr(path = "/", name = "system.posix_acl_access", value = 0x480010a0, size = 4096)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_getxattr(path = "/", name = "system.posix_acl_default", value = 0x500023b0, size = 4096)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_opendir(path="/", fi=0x572d2c30)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f64480011b0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f64480011b0
+    lock_owner = 0x0000000000000000
+
+bb_readdir(path="/", buf=0x48001130, filler=0x57d22ac0, offset=0, fi=0x57af5c30)
+    readdir returned 0x0x7f64480011e0
+calling filler with name bogus.txt
+calling filler with name bintangbhp.txt
+calling filler with name ..
+calling filler with name .
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f64480011b0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f64480011b0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/bogus.txt", statbuf=0x572d2c40)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/bogus.txt", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/bogus.txt"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1047159
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 11
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x64031f41
+    st_mtime = 0x64031f41
+    st_ctime = 0x64031f41
+
+bb_getxattr(path = "/bogus.txt", name = "security.selinux", value = 0x50001e30, size = 255)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/bogus.txt", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/bogus.txt"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_getxattr(path = "/bogus.txt", name = "system.posix_acl_access", value = 0x480091f0, size = 4096)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/bogus.txt", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/bogus.txt"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_getattr(path="/bintangbhp.txt", statbuf=0x57af5c40)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/bintangbhp.txt", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/bintangbhp.txt"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1047458
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 4096
+    st_blocks = 0
+    st_atime = 0x640324c4
+    st_mtime = 0x640324c4
+    st_ctime = 0x640324c4
+
+bb_getxattr(path = "/bintangbhp.txt", name = "security.selinux", value = 0x48000c30, size = 255)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/bintangbhp.txt", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/bintangbhp.txt"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_getxattr(path = "/bintangbhp.txt", name = "system.posix_acl_access", value = 0x500027c0, size = 4096)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/bintangbhp.txt", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/bintangbhp.txt"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_getxattr(path = "/", name = "security.selinux", value = 0x48000c30, size = 255)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_releasedir(path="/", fi=0x572d2c30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f64480011b0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f64480011b0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0x57af5c10)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1047158
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x640324da
+    st_mtime = 0x640324c4
+    st_ctime = 0x640324c4
+
+bb_access(path="/", mask=01)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+
+bb_opendir(path="/", fi=0x57af5c30)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f6450002840
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f6450002840
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0x572d2c10)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1047158
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x640324da
+    st_mtime = 0x640324c4
+    st_ctime = 0x640324c4
+
+bb_readdir(path="/", buf=0x500027c0, filler=0x57d22ac0, offset=0, fi=0x57af5c30)
+    readdir returned 0x0x7f6450002870
+calling filler with name bogus.txt
+calling filler with name bintangbhp.txt
+calling filler with name ..
+calling filler with name .
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f6450002840
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f6450002840
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0x57af5c30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f6450002840
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f6450002840
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0x572d2c10)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1047158
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x640324da
+    st_mtime = 0x640324c4
+    st_ctime = 0x640324c4
+
+bb_getattr(path="/bintangbhp.txt", statbuf=0x57af5c40)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/bintangbhp.txt", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/bintangbhp.txt"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1047458
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 4096
+    st_blocks = 0
+    st_atime = 0x640324c4
+    st_mtime = 0x640324c4
+    st_ctime = 0x640324c4
+
+bb_open(path"/bintangbhp.txt", fi=0x572d2cf0)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/bintangbhp.txt", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/bintangbhp.txt"
+    open returned 5
+    fi:
+    flags = 0x00008000
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0x0000000000000000
+
+bb_flush(path="/bintangbhp.txt", fi=0x57af5cf0)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x00000005
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0xf7a1c1c7e16e5739
+
+bb_release(path="/bintangbhp.txt", fi=0x572d2cf0)
+    fi:
+    flags = 0x00008000
+    fh_old = 0x00000005
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0x0000000000000000
+    close returned 0
+
+bb_opendir(path="/", fi=0x57af5c30)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f645000ac90
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f645000ac90
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0x572d2c10)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1047158
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x640324da
+    st_mtime = 0x640324c4
+    st_ctime = 0x640324c4
+
+bb_readdir(path="/", buf=0x50002840, filler=0x57d22ac0, offset=0, fi=0x57af5c30)
+    readdir returned 0x0x7f645000acc0
+calling filler with name bogus.txt
+calling filler with name bintangbhp.txt
+calling filler with name ..
+calling filler with name .
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f645000ac90
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f645000ac90
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0x572d2c30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f645000ac90
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f645000ac90
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0x572d2c10)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1047158
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x640324da
+    st_mtime = 0x640324c4
+    st_ctime = 0x640324c4
+
+bb_getattr(path="/bintangbhp.txt", statbuf=0x572d2c40)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/bintangbhp.txt", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/bintangbhp.txt"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1047458
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 4096
+    st_blocks = 0
+    st_atime = 0x640324c4
+    st_mtime = 0x640324c4
+    st_ctime = 0x640324c4
+
+bb_opendir(path="/", fi=0x57af5c30)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f645000ac90
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f645000ac90
+    lock_owner = 0x0000000000000000
+
+bb_readdir(path="/", buf=0x500028c0, filler=0x57d22ac0, offset=0, fi=0x572d2c30)
+    readdir returned 0x0x7f645000acc0
+calling filler with name bogus.txt
+calling filler with name bintangbhp.txt
+calling filler with name ..
+calling filler with name .
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f645000ac90
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f645000ac90
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0x572d2c30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f645000ac90
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f645000ac90
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0x57af5c10)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1047158
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x640324da
+    st_mtime = 0x640324c4
+    st_ctime = 0x640324c4
+
+bb_access(path="/", mask=01)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+
+bb_access(path="/", mask=01)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+
+bb_opendir(path="/", fi=0x572d2c30)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f6448009300
+    fi:
+    flags = 0x00008000
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f6448009300
+    lock_owner = 0x0000000000000000
+
+bb_access(path="/", mask=01)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+
+bb_access(path="/", mask=01)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+
+bb_releasedir(path="/", fi=0x57af5c30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f6448009300
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f6448009300
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0x572d2c30)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f6448009300
+    fi:
+    flags = 0x00008000
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f6448009300
+    lock_owner = 0x0000000000000000
+
+bb_access(path="/", mask=01)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+
+bb_access(path="/", mask=01)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+
+bb_releasedir(path="/", fi=0x57af5c30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f6448009300
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f6448009300
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0x572d2c30)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f6448009300
+    fi:
+    flags = 0x00008000
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f6448009300
+    lock_owner = 0x0000000000000000
+
+bb_access(path="/", mask=01)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+
+bb_access(path="/", mask=01)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+
+bb_releasedir(path="/", fi=0x57af5c30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f6448009300
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f6448009300
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0x572d2c30)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f6448009300
+    fi:
+    flags = 0x00008000
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f6448009300
+    lock_owner = 0x0000000000000000
+
+bb_access(path="/", mask=01)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+
+bb_access(path="/", mask=01)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+
+bb_releasedir(path="/", fi=0x57af5c30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f6448009300
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f6448009300
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0x572d2c30)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f6448009300
+    fi:
+    flags = 0x00008000
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f6448009300
+    lock_owner = 0x0000000000000000
+
+bb_access(path="/", mask=01)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+
+bb_access(path="/", mask=01)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+
+bb_releasedir(path="/", fi=0x57af5c30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f6448009300
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f6448009300
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0x572d2c30)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f6448009300
+    fi:
+    flags = 0x00008000
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f6448009300
+    lock_owner = 0x0000000000000000
+
+bb_access(path="/", mask=01)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+
+bb_access(path="/", mask=01)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+
+bb_releasedir(path="/", fi=0x57af5c30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f6448009300
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f6448009300
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0x572d2c30)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f6448009300
+    fi:
+    flags = 0x00008000
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f6448009300
+    lock_owner = 0x0000000000000000
+
+bb_access(path="/", mask=01)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+
+bb_access(path="/", mask=01)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+
+bb_releasedir(path="/", fi=0x57af5c30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f6448009300
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f6448009300
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0x572d2c30)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f6448009300
+    fi:
+    flags = 0x00008000
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f6448009300
+    lock_owner = 0x0000000000000000
+
+bb_access(path="/", mask=01)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+
+bb_access(path="/", mask=01)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+
+bb_releasedir(path="/", fi=0x57af5c30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f6448009300
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f6448009300
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0x572d2c30)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f6448009300
+    fi:
+    flags = 0x00008000
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f6448009300
+    lock_owner = 0x0000000000000000
+
+bb_access(path="/", mask=01)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+
+bb_access(path="/", mask=01)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+
+bb_releasedir(path="/", fi=0x57af5c30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f6448009300
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f6448009300
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0x572d2c30)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f6448009300
+    fi:
+    flags = 0x00008000
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f6448009300
+    lock_owner = 0x0000000000000000
+
+bb_access(path="/", mask=01)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+
+bb_access(path="/", mask=01)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+
+bb_releasedir(path="/", fi=0x57af5c30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f6448009300
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f6448009300
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0x57af5c30)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f645000ac90
+    fi:
+    flags = 0x00008000
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f645000ac90
+    lock_owner = 0x0000000000000000
+
+bb_access(path="/", mask=01)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+
+bb_access(path="/", mask=01)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+
+bb_releasedir(path="/", fi=0x57af5c30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f645000ac90
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f645000ac90
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0x56aafc30)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f644c000e50
+    fi:
+    flags = 0x00008000
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f644c000e50
+    lock_owner = 0x0000000000000000
+
+bb_access(path="/", mask=01)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+
+bb_access(path="/", mask=01)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+
+bb_releasedir(path="/", fi=0x56aafc30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f644c000e50
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f644c000e50
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0x572d2c30)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f6448009300
+    fi:
+    flags = 0x00008000
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f6448009300
+    lock_owner = 0x0000000000000000
+
+bb_access(path="/", mask=01)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+
+bb_access(path="/", mask=01)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+
+bb_releasedir(path="/", fi=0x572d2c30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f6448009300
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f6448009300
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0x57af5c30)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f645000ac90
+    fi:
+    flags = 0x00008000
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f645000ac90
+    lock_owner = 0x0000000000000000
+
+bb_access(path="/", mask=01)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+
+bb_access(path="/", mask=01)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+
+bb_releasedir(path="/", fi=0x57af5c30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f645000ac90
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f645000ac90
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0x56aafc30)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f644c008f20
+    fi:
+    flags = 0x00008000
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f644c008f20
+    lock_owner = 0x0000000000000000
+
+bb_access(path="/", mask=01)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+
+bb_access(path="/", mask=01)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+
+bb_releasedir(path="/", fi=0x56aafc30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f644c008f20
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f644c008f20
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0x572d2c30)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f6448009300
+    fi:
+    flags = 0x00008000
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f6448009300
+    lock_owner = 0x0000000000000000
+
+bb_access(path="/", mask=01)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+
+bb_access(path="/", mask=01)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+
+bb_releasedir(path="/", fi=0x572d2c30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f6448009300
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f6448009300
+    lock_owner = 0x0000000000000000
+
+bb_access(path="/bintangbhp.txt", mask=02)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/bintangbhp.txt", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/bintangbhp.txt"
+
+bb_open(path"/bintangbhp.txt", fi=0x56aafcf0)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/bintangbhp.txt", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/bintangbhp.txt"
+    open returned 5
+    fi:
+    flags = 0x00008000
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/.bintangbhp.txt.swp", statbuf=0x572d2c40)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/.bintangbhp.txt.swp", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/.bintangbhp.txt.swp"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_getattr(path="/.bintangbhp.txt.swp", statbuf=0x57af5c40)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/.bintangbhp.txt.swp", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/.bintangbhp.txt.swp"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_mknod(path="/.bintangbhp.txt.swp", mode=0100600, dev=0)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/.bintangbhp.txt.swp", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/.bintangbhp.txt.swp"
+    open returned 6
+    close returned 0
+
+bb_getattr(path="/.bintangbhp.txt.swp", statbuf=0x56aafc40)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/.bintangbhp.txt.swp", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/.bintangbhp.txt.swp"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1047459
+    st_mode = 0100600
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 4096
+    st_blocks = 0
+    st_atime = 0x640324e6
+    st_mtime = 0x640324e6
+    st_ctime = 0x640324e6
+
+bb_open(path"/.bintangbhp.txt.swp", fi=0x572d2cf0)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/.bintangbhp.txt.swp", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/.bintangbhp.txt.swp"
+    open returned 6
+    fi:
+    flags = 0x00008002
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000006
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/.bintangbhp.txt.swx", statbuf=0x57af5c40)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/.bintangbhp.txt.swx", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/.bintangbhp.txt.swx"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_getattr(path="/.bintangbhp.txt.swx", statbuf=0x56aafc40)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/.bintangbhp.txt.swx", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/.bintangbhp.txt.swx"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_mknod(path="/.bintangbhp.txt.swx", mode=0100600, dev=0)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/.bintangbhp.txt.swx", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/.bintangbhp.txt.swx"
+    open returned 7
+    close returned 0
+
+bb_getattr(path="/.bintangbhp.txt.swx", statbuf=0x572d2c40)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/.bintangbhp.txt.swx", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/.bintangbhp.txt.swx"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1047460
+    st_mode = 0100600
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 4096
+    st_blocks = 0
+    st_atime = 0x640324e6
+    st_mtime = 0x640324e6
+    st_ctime = 0x640324e6
+
+bb_open(path"/.bintangbhp.txt.swx", fi=0x57af5cf0)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/.bintangbhp.txt.swx", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/.bintangbhp.txt.swx"
+    open returned 7
+    fi:
+    flags = 0x00008002
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000007
+    lock_owner = 0x0000000000000000
+
+bb_flush(path="/.bintangbhp.txt.swx", fi=0x56aafcf0)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x00000007
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000007
+    lock_owner = 0xd3faf8cabcb04369
+
+bb_release(path="/.bintangbhp.txt.swx", fi=0x572d2cf0)
+    fi:
+    flags = 0x00008002
+    fh_old = 0x00000007
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000007
+    lock_owner = 0x0000000000000000
+    close returned 0
+bb_unlink(path="/.bintangbhp.txt.swx")
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/.bintangbhp.txt.swx", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/.bintangbhp.txt.swx"
+    unlink returned 0
+
+bb_flush(path="/.bintangbhp.txt.swp", fi=0x56aafcf0)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x00000006
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000006
+    lock_owner = 0xd3faf8cabcb04369
+
+bb_getattr(path="/.fuse_hidden0000000400000001", statbuf=0x57af5b70)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/.fuse_hidden0000000400000001", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/.fuse_hidden0000000400000001"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_rename(fpath="/.bintangbhp.txt.swp", newpath="/.fuse_hidden0000000400000001")
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/.bintangbhp.txt.swp", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/.bintangbhp.txt.swp"
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/.fuse_hidden0000000400000001", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/.fuse_hidden0000000400000001"
+    rename returned 0
+
+bb_release(path="/.fuse_hidden0000000400000001", fi=0x572d2cf0)
+    fi:
+    flags = 0x00008002
+    fh_old = 0x00000006
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000006
+    lock_owner = 0x0000000000000000
+    close returned 0
+bb_unlink(path="/.fuse_hidden0000000400000001")
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/.fuse_hidden0000000400000001", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/.fuse_hidden0000000400000001"
+    unlink returned 0
+
+bb_getattr(path="/.bintangbhp.txt.swp", statbuf=0x56aafc40)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/.bintangbhp.txt.swp", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/.bintangbhp.txt.swp"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_getattr(path="/.bintangbhp.txt.swp", statbuf=0x572d2c40)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/.bintangbhp.txt.swp", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/.bintangbhp.txt.swp"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_getattr(path="/.bintangbhp.txt.swp", statbuf=0x56aafc40)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/.bintangbhp.txt.swp", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/.bintangbhp.txt.swp"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_getattr(path="/.bintangbhp.txt.swp", statbuf=0x57af5c40)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/.bintangbhp.txt.swp", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/.bintangbhp.txt.swp"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_mknod(path="/.bintangbhp.txt.swp", mode=0100600, dev=0)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/.bintangbhp.txt.swp", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/.bintangbhp.txt.swp"
+    open returned 6
+    close returned 0
+
+bb_getattr(path="/.bintangbhp.txt.swp", statbuf=0x572d2c40)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/.bintangbhp.txt.swp", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/.bintangbhp.txt.swp"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1047459
+    st_mode = 0100600
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 4096
+    st_blocks = 0
+    st_atime = 0x640324e6
+    st_mtime = 0x640324e6
+    st_ctime = 0x640324e6
+
+bb_open(path"/.bintangbhp.txt.swp", fi=0x56aafcf0)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/.bintangbhp.txt.swp", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/.bintangbhp.txt.swp"
+    open returned 6
+    fi:
+    flags = 0x00028002
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000006
+    lock_owner = 0x0000000000000000
+
+bb_getxattr(path = "/.bintangbhp.txt.swp", name = "security.capability", value = 0x00000000, size = 0)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/.bintangbhp.txt.swp", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/.bintangbhp.txt.swp"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_write(path="/.bintangbhp.txt.swp", buf=0x572d4060, size=4096, offset=0, fi=0x572d2d50)
+    fi:
+    flags = 0x00028002
+    fh_old = 0x00000006
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000006
+    lock_owner = 0x0000000000000000
+    pwrite returned 4096
+
+bb_chmod(fpath="/.bintangbhp.txt.swp", mode=0100644)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/.bintangbhp.txt.swp", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/.bintangbhp.txt.swp"
+    chmod returned 0
+
+bb_getattr(path="/.bintangbhp.txt.swp", statbuf=0x56aafb70)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/.bintangbhp.txt.swp", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/.bintangbhp.txt.swp"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1047459
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x640324e6
+    st_mtime = 0x640324e6
+    st_ctime = 0x640324e6
+
+bb_flush(path="/bintangbhp.txt", fi=0x57af5cf0)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x00000005
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0xd3faf8cabcb04369
+
+bb_release(path="/bintangbhp.txt", fi=0x572d2cf0)
+    fi:
+    flags = 0x00008000
+    fh_old = 0x00000005
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0x0000000000000000
+    close returned 0
+
+bb_open(path"/bintangbhp.txt", fi=0x572d2cf0)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/bintangbhp.txt", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/bintangbhp.txt"
+    open returned 5
+    fi:
+    flags = 0x00008000
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0x0000000000000000
+
+bb_flush(path="/bintangbhp.txt", fi=0x57af5cf0)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x00000005
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0xd3faf8cabcb04369
+
+bb_release(path="/bintangbhp.txt", fi=0x572d2cf0)
+    fi:
+    flags = 0x00008000
+    fh_old = 0x00000005
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0x0000000000000000
+    close returned 0
+
+bb_getattr(path="/bintangbhp.txt", statbuf=0x56aafc40)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/bintangbhp.txt", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/bintangbhp.txt"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1047458
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 4096
+    st_blocks = 0
+    st_atime = 0x640324c4
+    st_mtime = 0x640324c4
+    st_ctime = 0x640324c4
+
+bb_getxattr(path = "/.bintangbhp.txt.swp", name = "security.capability", value = 0x00000000, size = 0)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/.bintangbhp.txt.swp", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/.bintangbhp.txt.swp"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_write(path="/.bintangbhp.txt.swp", buf=0x572d4060, size=4096, offset=0, fi=0x572d2d50)
+    fi:
+    flags = 0x00028002
+    fh_old = 0x00000006
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000006
+    lock_owner = 0x0000000000000000
+    pwrite returned 4096
+
+bb_getattr(path="/bintangbhp.txt", statbuf=0x56aafc40)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/bintangbhp.txt", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/bintangbhp.txt"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1047458
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 4096
+    st_blocks = 0
+    st_atime = 0x640324c4
+    st_mtime = 0x640324c4
+    st_ctime = 0x640324c4
+
+bb_access(path="/bintangbhp.txt", mask=02)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/bintangbhp.txt", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/bintangbhp.txt"
+
+bb_access(path="/bintangbhp.txt", mask=02)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/bintangbhp.txt", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/bintangbhp.txt"
+
+bb_getxattr(path = "/bintangbhp.txt", name = "system.posix_acl_access", value = 0x4c0011a0, size = 4096)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/bintangbhp.txt", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/bintangbhp.txt"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_getattr(path="/4913", statbuf=0x57af5c40)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/4913", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/4913"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_getattr(path="/4913", statbuf=0x572d2c40)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/4913", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/4913"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_mknod(path="/4913", mode=0100644, dev=0)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/4913", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/4913"
+    open returned 5
+    close returned 0
+
+bb_getattr(path="/4913", statbuf=0x56aafc40)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/4913", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/4913"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1047460
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 4096
+    st_blocks = 0
+    st_atime = 0x640324fa
+    st_mtime = 0x640324fa
+    st_ctime = 0x640324fa
+
+bb_open(path"/4913", fi=0x57af5cf0)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/4913", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/4913"
+    open returned 5
+    fi:
+    flags = 0x00028001
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0x0000000000000000
+
+bb_getxattr(path = "/4913", name = "security.capability", value = 0x00000000, size = 0)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/4913", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/4913"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_getattr(path="/4913", statbuf=0x56aafc10)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/4913", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/4913"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1047460
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 4096
+    st_blocks = 0
+    st_atime = 0x640324fa
+    st_mtime = 0x640324fa
+    st_ctime = 0x640324fa
+
+bb_chown(path="/4913", uid=1000, gid=1000)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/4913", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/4913"
+    chown returned 0
+
+bb_getattr(path="/4913", statbuf=0x57af5b70)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/4913", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/4913"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1047460
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 4096
+    st_blocks = 0
+    st_atime = 0x640324fa
+    st_mtime = 0x640324fa
+    st_ctime = 0x640324fa
+
+bb_flush(path="/4913", fi=0x572d2cf0)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x00000005
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0xd3faf8cabcb04369
+
+bb_release(path="/4913", fi=0x56aafcf0)
+    fi:
+    flags = 0x00028001
+    fh_old = 0x00000005
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0x0000000000000000
+    close returned 0
+bb_unlink(path="/4913")
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/4913", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/4913"
+    unlink returned 0
+
+bb_getattr(path="/bintangbhp.txt~", statbuf=0x572d2c40)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/bintangbhp.txt~", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/bintangbhp.txt~"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_getattr(path="/bintangbhp.txt~", statbuf=0x56aafc40)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/bintangbhp.txt~", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/bintangbhp.txt~"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_getattr(path="/bintangbhp.txt~", statbuf=0x57af5c40)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/bintangbhp.txt~", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/bintangbhp.txt~"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_getattr(path="/bintangbhp.txt~", statbuf=0x572d2c40)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/bintangbhp.txt~", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/bintangbhp.txt~"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_rename(fpath="/bintangbhp.txt", newpath="/bintangbhp.txt~")
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/bintangbhp.txt", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/bintangbhp.txt"
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/bintangbhp.txt~", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/bintangbhp.txt~"
+    rename returned 0
+
+bb_getattr(path="/bintangbhp.txt", statbuf=0x57af5c40)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/bintangbhp.txt", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/bintangbhp.txt"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_mknod(path="/bintangbhp.txt", mode=0100644, dev=0)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/bintangbhp.txt", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/bintangbhp.txt"
+    open returned 5
+    close returned 0
+
+bb_getattr(path="/bintangbhp.txt", statbuf=0x572d2c40)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/bintangbhp.txt", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/bintangbhp.txt"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1047460
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 4096
+    st_blocks = 0
+    st_atime = 0x640324fa
+    st_mtime = 0x640324fa
+    st_ctime = 0x640324fa
+
+bb_open(path"/bintangbhp.txt", fi=0x56aafcf0)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/bintangbhp.txt", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/bintangbhp.txt"
+    open returned 5
+    fi:
+    flags = 0x00008001
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0x0000000000000000
+
+bb_getxattr(path = "/bintangbhp.txt", name = "security.capability", value = 0x00000000, size = 0)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/bintangbhp.txt", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/bintangbhp.txt"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_ftruncate(path="/bintangbhp.txt", offset=0, fi=0x572d2c50)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x00000005
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0x0000000000000000
+
+bb_fgetattr(path="/bintangbhp.txt", statbuf=0x572d2b70, fi=0x572d2c50)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x00000005
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0x0000000000000000
+    si:
+    st_dev = 2049
+    st_ino = 1047460
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 4096
+    st_blocks = 0
+    st_atime = 0x640324fa
+    st_mtime = 0x640324fa
+    st_ctime = 0x640324fa
+
+bb_getxattr(path = "/bintangbhp.txt", name = "security.capability", value = 0x00000000, size = 0)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/bintangbhp.txt", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/bintangbhp.txt"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_write(path="/bintangbhp.txt", buf=0x57af7060, size=23, offset=0, fi=0x57af5d50)
+    fi:
+    flags = 0x00008001
+    fh_old = 0x00000005
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0x0000000000000000
+    pwrite returned 23
+
+bb_fsync(path="/bintangbhp.txt", datasync=0, fi=0x572d2cf0)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x00000005
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0x0000000000000000
+    fsync returned 0
+
+bb_getattr(path="/bintangbhp.txt", statbuf=0x56aafc10)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/bintangbhp.txt", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/bintangbhp.txt"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1047460
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 23
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x640324fa
+    st_mtime = 0x640324fa
+    st_ctime = 0x640324fa
+
+bb_chmod(fpath="/bintangbhp.txt", mode=0100644)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/bintangbhp.txt", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/bintangbhp.txt"
+    chmod returned 0
+
+bb_getattr(path="/bintangbhp.txt", statbuf=0x57af5b70)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/bintangbhp.txt", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/bintangbhp.txt"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1047460
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 23
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x640324fa
+    st_mtime = 0x640324fa
+    st_ctime = 0x640324fa
+
+bb_flush(path="/bintangbhp.txt", fi=0x572d2cf0)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x00000005
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0xd3faf8cabcb04369
+
+bb_release(path="/bintangbhp.txt", fi=0x56aafcf0)
+    fi:
+    flags = 0x00008001
+    fh_old = 0x00000005
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0x0000000000000000
+    close returned 0
+
+bb_setxattr(path="/bintangbhp.txt", name="system.posix_acl_access", value="", size=28, flags=0x00000000)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/bintangbhp.txt", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/bintangbhp.txt"
+    lsetxattr returned 0
+
+bb_getxattr(path = "/.bintangbhp.txt.swp", name = "security.capability", value = 0x00000000, size = 0)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/.bintangbhp.txt.swp", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/.bintangbhp.txt.swp"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_write(path="/.bintangbhp.txt.swp", buf=0x56ab1060, size=4096, offset=0, fi=0x56aafd50)
+    fi:
+    flags = 0x00028002
+    fh_old = 0x00000006
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000006
+    lock_owner = 0x0000000000000000
+    pwrite returned 4096
+
+bb_getattr(path="/bintangbhp.txt", statbuf=0x57af5c10)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/bintangbhp.txt", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/bintangbhp.txt"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1047460
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 23
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x640324fa
+    st_mtime = 0x640324fa
+    st_ctime = 0x640324fa
+bb_unlink(path="/bintangbhp.txt~")
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/bintangbhp.txt~", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/bintangbhp.txt~"
+    unlink returned 0
+
+bb_flush(path="/.bintangbhp.txt.swp", fi=0x57af5cf0)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x00000006
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000006
+    lock_owner = 0xd3faf8cabcb04369
+
+bb_release(path="/.bintangbhp.txt.swp", fi=0x572d2cf0)
+    fi:
+    flags = 0x00028002
+    fh_old = 0x00000006
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000006
+    lock_owner = 0x0000000000000000
+    close returned 0
+
+bb_getattr(path="/.bintangbhp.txt.swp", statbuf=0x572d2c40)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/.bintangbhp.txt.swp", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/.bintangbhp.txt.swp"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1047459
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x640324e6
+    st_mtime = 0x640324fa
+    st_ctime = 0x640324fa
+bb_unlink(path="/.bintangbhp.txt.swp")
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/.bintangbhp.txt.swp", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/.bintangbhp.txt.swp"
+    unlink returned 0
+
+bb_getattr(path="/", statbuf=0x57af5c10)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1047158
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x640324da
+    st_mtime = 0x640324fa
+    st_ctime = 0x640324fa
+
+bb_getattr(path="/", statbuf=0x56aafc10)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1047158
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x640324da
+    st_mtime = 0x640324fa
+    st_ctime = 0x640324fa
+
+bb_statfs(path="/", statv=0x572d2c70)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+    statvfs returned 0
+    sv:
+    f_bsize = 4096
+    f_frsize = 4096
+    f_blocks = 5902107
+    f_bfree = 3889184
+    f_bavail = 3583034
+    f_files = 1512560
+    f_ffree = 1370657
+    f_favail = 1370657
+    f_fsid = 880379028329240947
+    f_flag = 0x00001000
+    f_namemax = 255
+
+bb_getattr(path="/", statbuf=0x57af5c10)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1047158
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x640324da
+    st_mtime = 0x640324fa
+    st_ctime = 0x640324fa
+
+bb_statfs(path="/", statv=0x56aafc70)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+    statvfs returned 0
+    sv:
+    f_bsize = 4096
+    f_frsize = 4096
+    f_blocks = 5902107
+    f_bfree = 3889184
+    f_bavail = 3583034
+    f_files = 1512560
+    f_ffree = 1370657
+    f_favail = 1370657
+    f_fsid = 880379028329240947
+    f_flag = 0x00001000
+    f_namemax = 255
+
+bb_getattr(path="/", statbuf=0x572d2c10)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1047158
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x640324da
+    st_mtime = 0x640324fa
+    st_ctime = 0x640324fa
+
+bb_statfs(path="/", statv=0x57af5c70)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+    statvfs returned 0
+    sv:
+    f_bsize = 4096
+    f_frsize = 4096
+    f_blocks = 5902107
+    f_bfree = 3889183
+    f_bavail = 3583033
+    f_files = 1512560
+    f_ffree = 1370657
+    f_favail = 1370657
+    f_fsid = 880379028329240947
+    f_flag = 0x00001000
+    f_namemax = 255
+
+bb_getattr(path="/", statbuf=0x56aafc10)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1047158
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x640324da
+    st_mtime = 0x640324fa
+    st_ctime = 0x640324fa
+
+bb_getxattr(path = "/", name = "security.selinux", value = 0x50002210, size = 255)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_getxattr(path = "/", name = "system.posix_acl_access", value = 0x50002af0, size = 4096)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_getxattr(path = "/", name = "system.posix_acl_default", value = 0x4c0012b0, size = 4096)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_getattr(path="/", statbuf=0x572d2c10)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1047158
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x640324da
+    st_mtime = 0x640324fa
+    st_ctime = 0x640324fa
+
+bb_statfs(path="/", statv=0x57af5c70)
+    bb_fullpath:  rootdir = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/bintangbhp/git/sharesp231/bintangbhp/fuse-tutorial-2018-02-04/example/rootdir/"
+    statvfs returned 0
+    sv:
+    f_bsize = 4096
+    f_frsize = 4096
+    f_blocks = 5902107
+    f_bfree = 3889182
+    f_bavail = 3583032
+    f_files = 1512560
+    f_ffree = 1370657
+    f_favail = 1370657
+    f_fsid = 880379028329240947
+    f_flag = 0x00001000
+    f_namemax = 255
+
+bb_destroy(userdata=0x25ab32a0)
