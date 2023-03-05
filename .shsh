@@ -1,0 +1,18 @@
+# Sun 05 Mar 2023 15:00
+
+WEEK="02"
+
+for II in * ; do
+  [ -f $II/ATTENDANCE/W$WEEK.txt ] && {
+    echo -n "$II --- "
+    git log $II/ATTENDANCE/W$WEEK.txt | grep '^Date: '
+  }
+done
+
+echo "======================="
+
+for II in * ; do
+  [ -f $II/ATTENDANCE/W$WEEK.txt ] && {
+    echo "$II 5"
+  }
+done
