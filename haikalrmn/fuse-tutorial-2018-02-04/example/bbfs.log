@@ -1,0 +1,1903 @@
+
+bb_init()
+    conn:
+    proto_major = 7
+    proto_minor = 32
+    async_read = 1
+    max_write = 131072
+    max_readahead = 131072
+    capable = 00000ffb
+    want = 00000010
+    max_background = 0
+    congestion_threshold = 0
+    context:
+    fuse = fe22f7b0
+    uid = 0
+    gid = 0
+    pid = 0
+    private_data = fe22e2a0
+    logfile = fe22f2d0
+    rootdir = /home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir
+    umask = 00000
+
+bb_getattr(path="/BDMV", statbuf=0x63d23c40)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/BDMV", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/BDMV"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_opendir(path="/", fi=0x63d23c30)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f215c002050
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f215c002050
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0x63500c10)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 2224564
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x6403e3b5
+    st_mtime = 0x6403e3ae
+    st_ctime = 0x6403e3ae
+
+bb_getattr(path="/.xdg-volume-info", statbuf=0x63d23c40)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/.xdg-volume-info", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/.xdg-volume-info"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_getattr(path="/autorun.inf", statbuf=0x63500c40)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/autorun.inf", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/autorun.inf"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_readdir(path="/", buf=0x5c001fd0, filler=0x63f50ac0, offset=0, fi=0x63d23c30)
+    readdir returned 0x0x7f215c002080
+calling filler with name Makefile
+calling filler with name touch-a-file.txt
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f215c002050
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f215c002050
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/Makefile", statbuf=0x63500c40)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/Makefile", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/Makefile"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 2224578
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 185
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x6403e391
+    st_mtime = 0x6403e391
+    st_ctime = 0x6403e391
+
+bb_getattr(path="/touch-a-file.txt", statbuf=0x63d23c40)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/touch-a-file.txt", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/touch-a-file.txt"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 2224579
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 4096
+    st_blocks = 0
+    st_atime = 0x6403e3ae
+    st_mtime = 0x6403e3ae
+    st_ctime = 0x6403e3ae
+
+bb_getattr(path="/bogus.txt", statbuf=0x62cddc40)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/bogus.txt", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/bogus.txt"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 2224565
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 11
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x6403e2a4
+    st_mtime = 0x6403e2a4
+    st_ctime = 0x6403e2a4
+
+bb_releasedir(path="/", fi=0x63d23c30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f215c002050
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f215c002050
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0x63d23c30)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f215c00a840
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f215c00a840
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0x63500c10)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 2224564
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x6403e3b5
+    st_mtime = 0x6403e3ae
+    st_ctime = 0x6403e3ae
+
+bb_readdir(path="/", buf=0x5c0020e0, filler=0x63f50ac0, offset=0, fi=0x62cddc30)
+    readdir returned 0x0x7f215c00a870
+calling filler with name Makefile
+calling filler with name touch-a-file.txt
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f215c00a840
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f215c00a840
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0x62cddc30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f215c00a840
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f215c00a840
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0x62cddc30)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f2158001410
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f2158001410
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0x63500c10)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 2224564
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x6403e3b5
+    st_mtime = 0x6403e3ae
+    st_ctime = 0x6403e3ae
+
+bb_readdir(path="/", buf=0x58001390, filler=0x63f50ac0, offset=0, fi=0x63d23c30)
+    readdir returned 0x0x7f2158001440
+calling filler with name Makefile
+calling filler with name touch-a-file.txt
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f2158001410
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f2158001410
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0x63d23c30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f2158001410
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f2158001410
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0x63d23c30)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f215c00a840
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f215c00a840
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0x63500c10)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 2224564
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x6403e3b5
+    st_mtime = 0x6403e3ae
+    st_ctime = 0x6403e3ae
+
+bb_readdir(path="/", buf=0x5c002160, filler=0x63f50ac0, offset=0, fi=0x62cddc30)
+    readdir returned 0x0x7f215c00a870
+calling filler with name Makefile
+calling filler with name touch-a-file.txt
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f215c00a840
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f215c00a840
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0x62cddc30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f215c00a840
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f215c00a840
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0x62cddc30)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f21580094e0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f21580094e0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0x63500c10)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 2224564
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x6403e3b5
+    st_mtime = 0x6403e3ae
+    st_ctime = 0x6403e3ae
+
+bb_readdir(path="/", buf=0x58001530, filler=0x63f50ac0, offset=0, fi=0x63d23c30)
+    readdir returned 0x0x7f2158009510
+calling filler with name Makefile
+calling filler with name touch-a-file.txt
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f21580094e0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f21580094e0
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0x63d23c30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f21580094e0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f21580094e0
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0x63d23c30)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f215c00a840
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f215c00a840
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0x63500c10)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 2224564
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x6403e3b5
+    st_mtime = 0x6403e3ae
+    st_ctime = 0x6403e3ae
+
+bb_readdir(path="/", buf=0x5c0021e0, filler=0x63f50ac0, offset=0, fi=0x62cddc30)
+    readdir returned 0x0x7f215c00a870
+calling filler with name Makefile
+calling filler with name touch-a-file.txt
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f215c00a840
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f215c00a840
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0x62cddc30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f215c00a840
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f215c00a840
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0x62cddc30)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f21580094e0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f21580094e0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0x63500c10)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 2224564
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x6403e3b5
+    st_mtime = 0x6403e3ae
+    st_ctime = 0x6403e3ae
+
+bb_readdir(path="/", buf=0x580015b0, filler=0x63f50ac0, offset=0, fi=0x63d23c30)
+    readdir returned 0x0x7f2158009510
+calling filler with name Makefile
+calling filler with name touch-a-file.txt
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f21580094e0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f21580094e0
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0x63d23c30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f21580094e0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f21580094e0
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0x63d23c30)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f215c00a840
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f215c00a840
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0x63500c10)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 2224564
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x6403e3b5
+    st_mtime = 0x6403e3ae
+    st_ctime = 0x6403e3ae
+
+bb_readdir(path="/", buf=0x5c002260, filler=0x63f50ac0, offset=0, fi=0x62cddc30)
+    readdir returned 0x0x7f215c00a870
+calling filler with name Makefile
+calling filler with name touch-a-file.txt
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f215c00a840
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f215c00a840
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0x62cddc30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f215c00a840
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f215c00a840
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0x62cddc30)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f21580094e0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f21580094e0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0x63500c10)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 2224564
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x6403e3b5
+    st_mtime = 0x6403e3ae
+    st_ctime = 0x6403e3ae
+
+bb_readdir(path="/", buf=0x58001630, filler=0x63f50ac0, offset=0, fi=0x63d23c30)
+    readdir returned 0x0x7f2158009510
+calling filler with name Makefile
+calling filler with name touch-a-file.txt
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f21580094e0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f21580094e0
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0x63d23c30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f21580094e0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f21580094e0
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0x63d23c30)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f215c00a840
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f215c00a840
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0x63500c10)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 2224564
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x6403e3b5
+    st_mtime = 0x6403e3ae
+    st_ctime = 0x6403e3ae
+
+bb_readdir(path="/", buf=0x5c0022e0, filler=0x63f50ac0, offset=0, fi=0x62cddc30)
+    readdir returned 0x0x7f215c00a870
+calling filler with name Makefile
+calling filler with name touch-a-file.txt
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f215c00a840
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f215c00a840
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0x62cddc30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f215c00a840
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f215c00a840
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0x62cddc30)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f21580094e0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f21580094e0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0x63500c10)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 2224564
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x6403e3b5
+    st_mtime = 0x6403e3ae
+    st_ctime = 0x6403e3ae
+
+bb_readdir(path="/", buf=0x580016b0, filler=0x63f50ac0, offset=0, fi=0x63d23c30)
+    readdir returned 0x0x7f2158009510
+calling filler with name Makefile
+calling filler with name touch-a-file.txt
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f21580094e0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f21580094e0
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0x63d23c30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f21580094e0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f21580094e0
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0x63d23c30)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f215c00a840
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f215c00a840
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0x63500c10)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 2224564
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x6403e3b5
+    st_mtime = 0x6403e3ae
+    st_ctime = 0x6403e3ae
+
+bb_readdir(path="/", buf=0x5c002360, filler=0x63f50ac0, offset=0, fi=0x62cddc30)
+    readdir returned 0x0x7f215c00a870
+calling filler with name Makefile
+calling filler with name touch-a-file.txt
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f215c00a840
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f215c00a840
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0x62cddc30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f215c00a840
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f215c00a840
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0x62cddc30)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f21580094e0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f21580094e0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0x63500c10)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 2224564
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x6403e3b5
+    st_mtime = 0x6403e3ae
+    st_ctime = 0x6403e3ae
+
+bb_readdir(path="/", buf=0x58001730, filler=0x63f50ac0, offset=0, fi=0x63d23c30)
+    readdir returned 0x0x7f2158009510
+calling filler with name Makefile
+calling filler with name touch-a-file.txt
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f21580094e0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f21580094e0
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0x63d23c30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f21580094e0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f21580094e0
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0x63d23c30)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f215c00a840
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f215c00a840
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0x63500c10)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 2224564
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x6403e3b5
+    st_mtime = 0x6403e3ae
+    st_ctime = 0x6403e3ae
+
+bb_readdir(path="/", buf=0x5c0023e0, filler=0x63f50ac0, offset=0, fi=0x62cddc30)
+    readdir returned 0x0x7f215c00a870
+calling filler with name Makefile
+calling filler with name touch-a-file.txt
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f215c00a840
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f215c00a840
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0x62cddc30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f215c00a840
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f215c00a840
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0x62cddc30)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f21580094e0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f21580094e0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0x63500c10)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 2224564
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x6403e3b5
+    st_mtime = 0x6403e3ae
+    st_ctime = 0x6403e3ae
+
+bb_readdir(path="/", buf=0x580017b0, filler=0x63f50ac0, offset=0, fi=0x63d23c30)
+    readdir returned 0x0x7f2158009510
+calling filler with name Makefile
+calling filler with name touch-a-file.txt
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f21580094e0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f21580094e0
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0x63d23c30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f21580094e0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f21580094e0
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0x63d23c30)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f215c00a840
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f215c00a840
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0x63500c10)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 2224564
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x6403e3b5
+    st_mtime = 0x6403e3ae
+    st_ctime = 0x6403e3ae
+
+bb_readdir(path="/", buf=0x5c002460, filler=0x63f50ac0, offset=0, fi=0x62cddc30)
+    readdir returned 0x0x7f215c00a870
+calling filler with name Makefile
+calling filler with name touch-a-file.txt
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f215c00a840
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f215c00a840
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0x62cddc30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f215c00a840
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f215c00a840
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0x62cddc30)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f21580094e0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f21580094e0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0x63500c10)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 2224564
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x6403e3b5
+    st_mtime = 0x6403e3ae
+    st_ctime = 0x6403e3ae
+
+bb_readdir(path="/", buf=0x580017b0, filler=0x63f50ac0, offset=0, fi=0x63d23c30)
+    readdir returned 0x0x7f2158009510
+calling filler with name Makefile
+calling filler with name touch-a-file.txt
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f21580094e0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f21580094e0
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0x63d23c30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f21580094e0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f21580094e0
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0x63d23c30)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f215c00a840
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f215c00a840
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0x63500c10)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 2224564
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x6403e3b5
+    st_mtime = 0x6403e3ae
+    st_ctime = 0x6403e3ae
+
+bb_readdir(path="/", buf=0x5c002460, filler=0x63f50ac0, offset=0, fi=0x63d23c30)
+    readdir returned 0x0x7f215c00a870
+calling filler with name Makefile
+calling filler with name touch-a-file.txt
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f215c00a840
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f215c00a840
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0x63d23c30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f215c00a840
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f215c00a840
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0x63d23c30)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f215c00a840
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f215c00a840
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0x63500c10)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 2224564
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x6403e3b5
+    st_mtime = 0x6403e3ae
+    st_ctime = 0x6403e3ae
+
+bb_readdir(path="/", buf=0x5c002460, filler=0x63f50ac0, offset=0, fi=0x62cddc30)
+    readdir returned 0x0x7f215c00a870
+calling filler with name Makefile
+calling filler with name touch-a-file.txt
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f215c00a840
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f215c00a840
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0x62cddc30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f215c00a840
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f215c00a840
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0x62cddc30)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f21580094e0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f21580094e0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0x63500c10)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 2224564
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x6403e3b5
+    st_mtime = 0x6403e3ae
+    st_ctime = 0x6403e3ae
+
+bb_readdir(path="/", buf=0x580017b0, filler=0x63f50ac0, offset=0, fi=0x63d23c30)
+    readdir returned 0x0x7f2158009510
+calling filler with name Makefile
+calling filler with name touch-a-file.txt
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f21580094e0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f21580094e0
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0x63d23c30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f21580094e0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f21580094e0
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0x63d23c30)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f215c00a840
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f215c00a840
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0x63500c10)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 2224564
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x6403e3b5
+    st_mtime = 0x6403e3ae
+    st_ctime = 0x6403e3ae
+
+bb_readdir(path="/", buf=0x5c002460, filler=0x63f50ac0, offset=0, fi=0x62cddc30)
+    readdir returned 0x0x7f215c00a870
+calling filler with name Makefile
+calling filler with name touch-a-file.txt
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f215c00a840
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f215c00a840
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0x62cddc30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f215c00a840
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f215c00a840
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0x62cddc30)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f21580094e0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f21580094e0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0x63500c10)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 2224564
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x6403e3b5
+    st_mtime = 0x6403e3ae
+    st_ctime = 0x6403e3ae
+
+bb_readdir(path="/", buf=0x580017b0, filler=0x63f50ac0, offset=0, fi=0x63d23c30)
+    readdir returned 0x0x7f2158009510
+calling filler with name Makefile
+calling filler with name touch-a-file.txt
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f21580094e0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f21580094e0
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0x63d23c30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f21580094e0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f21580094e0
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0x63d23c30)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f215c00a840
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f215c00a840
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0x63500c10)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 2224564
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x6403e3b5
+    st_mtime = 0x6403e3ae
+    st_ctime = 0x6403e3ae
+
+bb_readdir(path="/", buf=0x5c002460, filler=0x63f50ac0, offset=0, fi=0x62cddc30)
+    readdir returned 0x0x7f215c00a870
+calling filler with name Makefile
+calling filler with name touch-a-file.txt
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f215c00a840
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f215c00a840
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0x62cddc30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f215c00a840
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f215c00a840
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0x62cddc30)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f21580094e0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f21580094e0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0x63500c10)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 2224564
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x6403e3b5
+    st_mtime = 0x6403e3ae
+    st_ctime = 0x6403e3ae
+
+bb_readdir(path="/", buf=0x580017b0, filler=0x63f50ac0, offset=0, fi=0x63d23c30)
+    readdir returned 0x0x7f2158009510
+calling filler with name Makefile
+calling filler with name touch-a-file.txt
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f21580094e0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f21580094e0
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0x63d23c30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f21580094e0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f21580094e0
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0x63d23c30)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f215c00a840
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f215c00a840
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0x63500c10)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 2224564
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x6403e3b5
+    st_mtime = 0x6403e3ae
+    st_ctime = 0x6403e3ae
+
+bb_readdir(path="/", buf=0x5c002460, filler=0x63f50ac0, offset=0, fi=0x62cddc30)
+    readdir returned 0x0x7f215c00a870
+calling filler with name Makefile
+calling filler with name touch-a-file.txt
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f215c00a840
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f215c00a840
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0x62cddc30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f215c00a840
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f215c00a840
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0x63d23c30)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f215c00a840
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f215c00a840
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0x63500c10)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 2224564
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x6403e3b5
+    st_mtime = 0x6403e3ae
+    st_ctime = 0x6403e3ae
+
+bb_readdir(path="/", buf=0x5c002460, filler=0x63f50ac0, offset=0, fi=0x62cddc30)
+    readdir returned 0x0x7f215c00a870
+calling filler with name Makefile
+calling filler with name touch-a-file.txt
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f215c00a840
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f215c00a840
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0x62cddc30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f215c00a840
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f215c00a840
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/autorun.inf", statbuf=0x62cddc40)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/autorun.inf", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/autorun.inf"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_getattr(path="/", statbuf=0x63500c10)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 2224564
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x6403e3b5
+    st_mtime = 0x6403e3ae
+    st_ctime = 0x6403e3ae
+
+bb_statfs(path="/", statv=0x63d23c70)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    statvfs returned 0
+    sv:
+    f_bsize = 4096
+    f_frsize = 4096
+    f_blocks = 9996927
+    f_bfree = 6951536
+    f_bavail = 6435671
+    f_files = 2559088
+    f_ffree = 2266744
+    f_favail = 2266744
+    f_fsid = 7795667282129048541
+    f_flag = 0x00001000
+    f_namemax = 255
+
+bb_getattr(path="/", statbuf=0x62cddc10)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 2224564
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x6403e3b5
+    st_mtime = 0x6403e3ae
+    st_ctime = 0x6403e3ae
+
+bb_getxattr(path = "/", name = "security.selinux", value = 0x54000c30, size = 255)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_getxattr(path = "/", name = "system.posix_acl_access", value = 0x00000000, size = 0)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_getxattr(path = "/", name = "system.posix_acl_default", value = 0x00000000, size = 0)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_opendir(path="/", fi=0x63500c30)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f21540012c0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f21540012c0
+    lock_owner = 0x0000000000000000
+
+bb_readdir(path="/", buf=0x54001240, filler=0x63f50ac0, offset=0, fi=0x63d23c30)
+    readdir returned 0x0x7f21540012f0
+calling filler with name Makefile
+calling filler with name touch-a-file.txt
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f21540012c0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f21540012c0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/Makefile", statbuf=0x62cddc40)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/Makefile", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/Makefile"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 2224578
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 185
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x6403e391
+    st_mtime = 0x6403e391
+    st_ctime = 0x6403e391
+
+bb_getxattr(path = "/Makefile", name = "security.selinux", value = 0x54000c30, size = 255)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/Makefile", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/Makefile"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_getxattr(path = "/Makefile", name = "system.posix_acl_access", value = 0x00000000, size = 0)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/Makefile", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/Makefile"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_getattr(path="/touch-a-file.txt", statbuf=0x62cddc40)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/touch-a-file.txt", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/touch-a-file.txt"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 2224579
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 4096
+    st_blocks = 0
+    st_atime = 0x6403e3ae
+    st_mtime = 0x6403e3ae
+    st_ctime = 0x6403e3ae
+
+bb_getxattr(path = "/touch-a-file.txt", name = "security.selinux", value = 0x54000c30, size = 255)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/touch-a-file.txt", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/touch-a-file.txt"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_getxattr(path = "/touch-a-file.txt", name = "system.posix_acl_access", value = 0x00000000, size = 0)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/touch-a-file.txt", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/touch-a-file.txt"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_getxattr(path = "/", name = "security.selinux", value = 0x58000cc0, size = 255)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_getxattr(path = "/", name = "system.posix_acl_access", value = 0x00000000, size = 0)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_getxattr(path = "/", name = "system.posix_acl_default", value = 0x00000000, size = 0)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_getattr(path="/bogus.txt", statbuf=0x62cddc40)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/bogus.txt", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/bogus.txt"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 2224565
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 11
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x6403e2a4
+    st_mtime = 0x6403e2a4
+    st_ctime = 0x6403e2a4
+
+bb_getxattr(path = "/bogus.txt", name = "security.selinux", value = 0x54000c30, size = 255)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/bogus.txt", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/bogus.txt"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_getxattr(path = "/bogus.txt", name = "system.posix_acl_access", value = 0x00000000, size = 0)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/bogus.txt", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/bogus.txt"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_releasedir(path="/", fi=0x63500c30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f21540012c0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f21540012c0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0x63d23c10)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 2224564
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x6403e3b5
+    st_mtime = 0x6403e3ae
+    st_ctime = 0x6403e3ae
+
+bb_opendir(path="/", fi=0x62cddc30)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f21580094e0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f21580094e0
+    lock_owner = 0x0000000000000000
+
+bb_readdir(path="/", buf=0x580017b0, filler=0x63f50ac0, offset=0, fi=0x63500c30)
+    readdir returned 0x0x7f2158009510
+calling filler with name Makefile
+calling filler with name touch-a-file.txt
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f21580094e0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f21580094e0
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0x63d23c30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f21580094e0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f21580094e0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0x62cddc10)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 2224564
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x6403e3b5
+    st_mtime = 0x6403e3ae
+    st_ctime = 0x6403e3ae
+
+bb_statfs(path="/", statv=0x63500c70)
+    bb_fullpath:  rootdir = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/haikalrmn/sharesp231/haikalrmn/fuse-tutorial-2018-02-04/example/rootdir/"
+    statvfs returned 0
+    sv:
+    f_bsize = 4096
+    f_frsize = 4096
+    f_blocks = 9996927
+    f_bfree = 6951534
+    f_bavail = 6435669
+    f_files = 2559088
+    f_ffree = 2266745
+    f_favail = 2266745
+    f_fsid = 7795667282129048541
+    f_flag = 0x00001000
+    f_namemax = 255
+
+bb_destroy(userdata=0xfe22e2a0)
