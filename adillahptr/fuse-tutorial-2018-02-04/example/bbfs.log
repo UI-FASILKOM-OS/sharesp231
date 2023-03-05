@@ -11,88 +11,16 @@ bb_init()
     max_background = 0
     congestion_threshold = 0
     context:
-    fuse = 93798820
+    fuse = 1178c7c0
     uid = 0
     gid = 0
     pid = 0
-    private_data = 937972a0
-    logfile = 937982d0
+    private_data = 1178b2a0
+    logfile = 1178c2d0
     rootdir = /home/adillahptr/git/sharesp231/adillahptr/fuse-tutorial-2018-02-04/example/rootdir
     umask = 00000
 
-bb_getattr(path="/", statbuf=0x3ba33c10)
-    bb_fullpath:  rootdir = "/home/adillahptr/git/sharesp231/adillahptr/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/adillahptr/git/sharesp231/adillahptr/fuse-tutorial-2018-02-04/example/rootdir/"
-    lstat returned 0
-    si:
-    st_dev = 2049
-    st_ino = 795345
-    st_mode = 040755
-    st_nlink = 2
-    st_uid = 1000
-    st_gid = 1000
-    st_rdev = 0
-    st_size = 4096
-    st_blksize = 4096
-    st_blocks = 8
-    st_atime = 0x63fdc241
-    st_mtime = 0x63fdc495
-    st_ctime = 0x63fdc495
-
-bb_opendir(path="/", fi=0x3c256c30)
-    bb_fullpath:  rootdir = "/home/adillahptr/git/sharesp231/adillahptr/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/adillahptr/git/sharesp231/adillahptr/fuse-tutorial-2018-02-04/example/rootdir/"
-    opendir returned 0x0x7fea34001fc0
-    fi:
-    flags = 0x00018800
-    fh_old = 0x00000000
-    writepage = 0
-    direct_io = 0
-    keep_cache = 0
-    fh = 0x00007fea34001fc0
-    lock_owner = 0x0000000000000000
-
-bb_readdir(path="/", buf=0x34001e30, filler=0x3c483ac0, offset=0, fi=0x3ba33c30)
-    readdir returned 0x0x7fea34001ff0
-calling filler with name .
-calling filler with name bogus.txt
-calling filler with name ..
-    fi:
-    flags = 0x00000000
-    fh_old = 0x7fea34001fc0
-    writepage = 0
-    direct_io = 0
-    keep_cache = 0
-    fh = 0x00007fea34001fc0
-    lock_owner = 0x0000000000000000
-
-bb_getattr(path="/bogus.txt", statbuf=0x3c256c40)
-    bb_fullpath:  rootdir = "/home/adillahptr/git/sharesp231/adillahptr/fuse-tutorial-2018-02-04/example/rootdir", path = "/bogus.txt", fpath = "/home/adillahptr/git/sharesp231/adillahptr/fuse-tutorial-2018-02-04/example/rootdir/bogus.txt"
-    lstat returned 0
-    si:
-    st_dev = 2049
-    st_ino = 795346
-    st_mode = 0100644
-    st_nlink = 1
-    st_uid = 1000
-    st_gid = 1000
-    st_rdev = 0
-    st_size = 11
-    st_blksize = 4096
-    st_blocks = 8
-    st_atime = 0x63fc7527
-    st_mtime = 0x63fc74de
-    st_ctime = 0x63fc74de
-
-bb_releasedir(path="/", fi=0x3c256c30)
-    fi:
-    flags = 0x00000000
-    fh_old = 0x7fea34001fc0
-    writepage = 0
-    direct_io = 0
-    keep_cache = 0
-    fh = 0x00007fea34001fc0
-    lock_owner = 0x0000000000000000
-
-bb_getattr(path="/", statbuf=0x3ba33c10)
+bb_getattr(path="/", statbuf=0x5502ac10)
     bb_fullpath:  rootdir = "/home/adillahptr/git/sharesp231/adillahptr/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/adillahptr/git/sharesp231/adillahptr/fuse-tutorial-2018-02-04/example/rootdir/"
     lstat returned 0
     si:
@@ -110,4 +38,287 @@ bb_getattr(path="/", statbuf=0x3ba33c10)
     st_mtime = 0x63fdc495
     st_ctime = 0x63fdc495
 
-bb_destroy(userdata=0x937972a0)
+bb_opendir(path="/", fi=0x5584dc30)
+    bb_fullpath:  rootdir = "/home/adillahptr/git/sharesp231/adillahptr/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/adillahptr/git/sharesp231/adillahptr/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f3e50001fc0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f3e50001fc0
+    lock_owner = 0x0000000000000000
+
+bb_readdir(path="/", buf=0x50001e30, filler=0x55a7aac0, offset=0, fi=0x5502ac30)
+    readdir returned 0x0x7f3e50001ff0
+calling filler with name .
+calling filler with name bogus.txt
+calling filler with name ..
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f3e50001fc0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f3e50001fc0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/bogus.txt", statbuf=0x5584dc40)
+    bb_fullpath:  rootdir = "/home/adillahptr/git/sharesp231/adillahptr/fuse-tutorial-2018-02-04/example/rootdir", path = "/bogus.txt", fpath = "/home/adillahptr/git/sharesp231/adillahptr/fuse-tutorial-2018-02-04/example/rootdir/bogus.txt"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 795346
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 11
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x63fc7527
+    st_mtime = 0x63fc74de
+    st_ctime = 0x63fc74de
+
+bb_releasedir(path="/", fi=0x5584dc30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f3e50001fc0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f3e50001fc0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0x5502ac10)
+    bb_fullpath:  rootdir = "/home/adillahptr/git/sharesp231/adillahptr/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/adillahptr/git/sharesp231/adillahptr/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 795345
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x64045aae
+    st_mtime = 0x63fdc495
+    st_ctime = 0x63fdc495
+
+bb_getattr(path="/adillahptr.txt", statbuf=0x5584dc40)
+    bb_fullpath:  rootdir = "/home/adillahptr/git/sharesp231/adillahptr/fuse-tutorial-2018-02-04/example/rootdir", path = "/adillahptr.txt", fpath = "/home/adillahptr/git/sharesp231/adillahptr/fuse-tutorial-2018-02-04/example/rootdir/adillahptr.txt"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_getattr(path="/adillahptr.txt", statbuf=0x5502ac40)
+    bb_fullpath:  rootdir = "/home/adillahptr/git/sharesp231/adillahptr/fuse-tutorial-2018-02-04/example/rootdir", path = "/adillahptr.txt", fpath = "/home/adillahptr/git/sharesp231/adillahptr/fuse-tutorial-2018-02-04/example/rootdir/adillahptr.txt"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_mknod(path="/adillahptr.txt", mode=0100644, dev=0)
+    bb_fullpath:  rootdir = "/home/adillahptr/git/sharesp231/adillahptr/fuse-tutorial-2018-02-04/example/rootdir", path = "/adillahptr.txt", fpath = "/home/adillahptr/git/sharesp231/adillahptr/fuse-tutorial-2018-02-04/example/rootdir/adillahptr.txt"
+    open returned 5
+    close returned 0
+
+bb_getattr(path="/adillahptr.txt", statbuf=0x5502ac40)
+    bb_fullpath:  rootdir = "/home/adillahptr/git/sharesp231/adillahptr/fuse-tutorial-2018-02-04/example/rootdir", path = "/adillahptr.txt", fpath = "/home/adillahptr/git/sharesp231/adillahptr/fuse-tutorial-2018-02-04/example/rootdir/adillahptr.txt"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 795710
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 4096
+    st_blocks = 0
+    st_atime = 0x64045af7
+    st_mtime = 0x64045af7
+    st_ctime = 0x64045af7
+
+bb_open(path"/adillahptr.txt", fi=0x5584dcf0)
+    bb_fullpath:  rootdir = "/home/adillahptr/git/sharesp231/adillahptr/fuse-tutorial-2018-02-04/example/rootdir", path = "/adillahptr.txt", fpath = "/home/adillahptr/git/sharesp231/adillahptr/fuse-tutorial-2018-02-04/example/rootdir/adillahptr.txt"
+    open returned 5
+    fi:
+    flags = 0x00008001
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0x0000000000000000
+
+bb_flush(path="/adillahptr.txt", fi=0x5502acf0)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x00000005
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0x1a016cfe3583d71f
+
+bb_getxattr(path = "/adillahptr.txt", name = "security.capability", value = 0x00000000, size = 0)
+    bb_fullpath:  rootdir = "/home/adillahptr/git/sharesp231/adillahptr/fuse-tutorial-2018-02-04/example/rootdir", path = "/adillahptr.txt", fpath = "/home/adillahptr/git/sharesp231/adillahptr/fuse-tutorial-2018-02-04/example/rootdir/adillahptr.txt"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_write(path="/adillahptr.txt", buf=0x5502c060, size=24, offset=0, fi=0x5502ad50)
+    fi:
+    flags = 0x00008001
+    fh_old = 0x00000005
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0x0000000000000000
+    pwrite returned 24
+
+bb_flush(path="/adillahptr.txt", fi=0x5584dcf0)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x00000005
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0x1a016cfe3583d71f
+
+bb_release(path="/adillahptr.txt", fi=0x5502acf0)
+    fi:
+    flags = 0x00008001
+    fh_old = 0x00000005
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0x0000000000000000
+    close returned 0
+
+bb_getattr(path="/", statbuf=0x5584dc10)
+    bb_fullpath:  rootdir = "/home/adillahptr/git/sharesp231/adillahptr/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/adillahptr/git/sharesp231/adillahptr/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 795345
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x64045aae
+    st_mtime = 0x64045af7
+    st_ctime = 0x64045af7
+
+bb_opendir(path="/", fi=0x5502ac30)
+    bb_fullpath:  rootdir = "/home/adillahptr/git/sharesp231/adillahptr/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/adillahptr/git/sharesp231/adillahptr/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f3e480015c0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f3e480015c0
+    lock_owner = 0x0000000000000000
+
+bb_readdir(path="/", buf=0x48001540, filler=0x55a7aac0, offset=0, fi=0x5584dc30)
+    readdir returned 0x0x7f3e480015f0
+calling filler with name .
+calling filler with name adillahptr.txt
+calling filler with name bogus.txt
+calling filler with name ..
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f3e480015c0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f3e480015c0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/adillahptr.txt", statbuf=0x5502ac40)
+    bb_fullpath:  rootdir = "/home/adillahptr/git/sharesp231/adillahptr/fuse-tutorial-2018-02-04/example/rootdir", path = "/adillahptr.txt", fpath = "/home/adillahptr/git/sharesp231/adillahptr/fuse-tutorial-2018-02-04/example/rootdir/adillahptr.txt"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 795710
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 24
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x64045af7
+    st_mtime = 0x64045af7
+    st_ctime = 0x64045af7
+
+bb_getattr(path="/bogus.txt", statbuf=0x5584dc40)
+    bb_fullpath:  rootdir = "/home/adillahptr/git/sharesp231/adillahptr/fuse-tutorial-2018-02-04/example/rootdir", path = "/bogus.txt", fpath = "/home/adillahptr/git/sharesp231/adillahptr/fuse-tutorial-2018-02-04/example/rootdir/bogus.txt"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 795346
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 11
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x63fc7527
+    st_mtime = 0x63fc74de
+    st_ctime = 0x63fc74de
+
+bb_releasedir(path="/", fi=0x5584dc30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f3e480015c0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f3e480015c0
+    lock_owner = 0x0000000000000000
+
+bb_destroy(userdata=0x1178b2a0)
