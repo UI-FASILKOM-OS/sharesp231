@@ -90,5 +90,6 @@ static struct fuse_operations hello_oper = {
 
 int main(int argc, char *argv[])
 {
+    printf("rorre\n");
     return fuse_main(argc, argv, &hello_oper);
 }
