@@ -12,7 +12,7 @@
 #include <errno.h>
 #include <fcntl.h>
 
-static const char *hello_str = "Hello World!\n";
+static const char *hello_str = "Meta502\n";
 static const char *hello_path = "/hello";
 
 static int hello_getattr(const char *path, struct stat *stbuf)
@@ -90,6 +90,5 @@ static struct fuse_operations hello_oper = {
 
 int main(int argc, char *argv[])
 {
-    printf("rorre\n");
     return fuse_main(argc, argv, &hello_oper);
 }

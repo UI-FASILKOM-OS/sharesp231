@@ -1,0 +1,1076 @@
+
+bb_init()
+    conn:
+    proto_major = 7
+    proto_minor = 38
+    async_read = 1
+    max_write = 131072
+    max_readahead = 131072
+    capable = 00000ffb
+    want = 00000010
+    max_background = 0
+    congestion_threshold = 0
+    context:
+    fuse = 0c71e7b0
+    uid = 0
+    gid = 0
+    pid = 0
+    private_data = 0c71d2a0
+    logfile = 0c71e2d0
+    rootdir = /home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir
+    umask = 00000
+
+bb_getattr(path="/", statbuf=0xa9192c10)
+    bb_fullpath:  rootdir = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2050
+    st_ino = 176551
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x64036ed8
+    st_mtime = 0x64036ed3
+    st_ctime = 0x64036ed3
+
+bb_getattr(path="/", statbuf=0xa99b5c10)
+    bb_fullpath:  rootdir = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2050
+    st_ino = 176551
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x64036ed8
+    st_mtime = 0x64036ed3
+    st_ctime = 0x64036ed3
+
+bb_access(path="/", mask=01)
+    bb_fullpath:  rootdir = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir/"
+
+bb_opendir(path="/", fi=0xa99b5c30)
+    bb_fullpath:  rootdir = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f52a4002050
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f52a4002050
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xa9192c10)
+    bb_fullpath:  rootdir = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2050
+    st_ino = 176551
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x64036ed8
+    st_mtime = 0x64036ed3
+    st_ctime = 0x64036ed3
+
+bb_readdir(path="/", buf=0xa4001fd0, filler=0xa9be2ac0, offset=0, fi=0xa99b5c30)
+    readdir returned 0x0x7f52a4002080
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name .
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f52a4002050
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f52a4002050
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xa99b5c30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f52a4002050
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f52a4002050
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xa9192c10)
+    bb_fullpath:  rootdir = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2050
+    st_ino = 176551
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x64036ed8
+    st_mtime = 0x64036ed3
+    st_ctime = 0x64036ed3
+
+bb_getattr(path="/", statbuf=0xa99b5c10)
+    bb_fullpath:  rootdir = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2050
+    st_ino = 176551
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x64036ed8
+    st_mtime = 0x64036ed3
+    st_ctime = 0x64036ed3
+
+bb_access(path="/", mask=01)
+    bb_fullpath:  rootdir = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir/"
+
+bb_opendir(path="/", fi=0xa99b5c30)
+    bb_fullpath:  rootdir = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f52a400a5c0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f52a400a5c0
+    lock_owner = 0x0000000000000000
+
+bb_readdir(path="/", buf=0xa4002170, filler=0xa9be2ac0, offset=0, fi=0xa9192c30)
+    readdir returned 0x0x7f52a400a5f0
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name .
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f52a400a5c0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f52a400a5c0
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xa9192c30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f52a400a5c0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f52a400a5c0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xa99b5c10)
+    bb_fullpath:  rootdir = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2050
+    st_ino = 176551
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x64036ed8
+    st_mtime = 0x64036ed3
+    st_ctime = 0x64036ed3
+
+bb_getattr(path="/cbkadal.txt", statbuf=0xa9192c40)
+    bb_fullpath:  rootdir = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir", path = "/cbkadal.txt", fpath = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir/cbkadal.txt"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_mknod(path="/cbkadal.txt", mode=0100644, dev=0)
+    bb_fullpath:  rootdir = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir", path = "/cbkadal.txt", fpath = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir/cbkadal.txt"
+    open returned 5
+    close returned 0
+
+bb_getattr(path="/cbkadal.txt", statbuf=0xa9192c40)
+    bb_fullpath:  rootdir = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir", path = "/cbkadal.txt", fpath = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir/cbkadal.txt"
+    lstat returned 0
+    si:
+    st_dev = 2050
+    st_ino = 176612
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 4096
+    st_blocks = 0
+    st_atime = 0x6403756c
+    st_mtime = 0x6403756c
+    st_ctime = 0x6403756c
+
+bb_open(path"/cbkadal.txt", fi=0xa99b5cf0)
+    bb_fullpath:  rootdir = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir", path = "/cbkadal.txt", fpath = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir/cbkadal.txt"
+    open returned 5
+    fi:
+    flags = 0x00008001
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0x0000000000000000
+
+bb_flush(path="/cbkadal.txt", fi=0xa9192cf0)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x00000005
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0x67d9c61c3b3ff10f
+
+bb_getattr(path="/Hallo, saya cbkadal!", statbuf=0xa99b5c40)
+    bb_fullpath:  rootdir = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir", path = "/Hallo, saya cbkadal!", fpath = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir/Hallo, saya cbkadal!"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_flush(path="/cbkadal.txt", fi=0xa9192cf0)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x00000005
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0x67d9c61c3b3ff10f
+
+bb_release(path="/cbkadal.txt", fi=0xa99b5cf0)
+    fi:
+    flags = 0x00008001
+    fh_old = 0x00000005
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0x0000000000000000
+    close returned 0
+
+bb_getattr(path="/cbkadal.txt", statbuf=0xa9192c40)
+    bb_fullpath:  rootdir = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir", path = "/cbkadal.txt", fpath = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir/cbkadal.txt"
+    lstat returned 0
+    si:
+    st_dev = 2050
+    st_ino = 176612
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 4096
+    st_blocks = 0
+    st_atime = 0x6403756c
+    st_mtime = 0x6403756c
+    st_ctime = 0x6403756c
+
+bb_open(path"/cbkadal.txt", fi=0xa99b5cf0)
+    bb_fullpath:  rootdir = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir", path = "/cbkadal.txt", fpath = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir/cbkadal.txt"
+    open returned 5
+    fi:
+    flags = 0x00008001
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0x0000000000000000
+
+bb_getxattr(path = "/cbkadal.txt", name = "security.capability", value = 0x00000000, size = 0)
+    bb_fullpath:  rootdir = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir", path = "/cbkadal.txt", fpath = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir/cbkadal.txt"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_truncate(path="/cbkadal.txt", newsize=0)
+    bb_fullpath:  rootdir = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir", path = "/cbkadal.txt", fpath = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir/cbkadal.txt"
+    truncate returned 0
+
+bb_getattr(path="/cbkadal.txt", statbuf=0xa99b5b70)
+    bb_fullpath:  rootdir = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir", path = "/cbkadal.txt", fpath = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir/cbkadal.txt"
+    lstat returned 0
+    si:
+    st_dev = 2050
+    st_ino = 176612
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 4096
+    st_blocks = 0
+    st_atime = 0x6403756c
+    st_mtime = 0x64037572
+    st_ctime = 0x64037572
+
+bb_flush(path="/cbkadal.txt", fi=0xa9192cf0)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x00000005
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0xf8a264d68e5b91e5
+
+bb_getxattr(path = "/cbkadal.txt", name = "security.capability", value = 0x00000000, size = 0)
+    bb_fullpath:  rootdir = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir", path = "/cbkadal.txt", fpath = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir/cbkadal.txt"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_write(path="/cbkadal.txt", buf=0xa9194060, size=21, offset=0, fi=0xa9192d50)
+    fi:
+    flags = 0x00008001
+    fh_old = 0x00000005
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0x0000000000000000
+    pwrite returned 21
+
+bb_flush(path="/cbkadal.txt", fi=0xa99b5cf0)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x00000005
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0xf8a264d68e5b91e5
+
+bb_release(path="/cbkadal.txt", fi=0xa9192cf0)
+    fi:
+    flags = 0x00008001
+    fh_old = 0x00000005
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0x0000000000000000
+    close returned 0
+
+bb_opendir(path="/", fi=0xa99b5c30)
+    bb_fullpath:  rootdir = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f52a400a5c0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f52a400a5c0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xa9192c10)
+    bb_fullpath:  rootdir = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2050
+    st_ino = 176551
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x64036ed8
+    st_mtime = 0x6403756c
+    st_ctime = 0x6403756c
+
+bb_readdir(path="/", buf=0xa4002280, filler=0xa9be2ac0, offset=0, fi=0xa99b5c30)
+    readdir returned 0x0x7f52a400a5f0
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name cbkadal.txt
+calling filler with name .
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f52a400a5c0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f52a400a5c0
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xa99b5c30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f52a400a5c0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f52a400a5c0
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xa9192c30)
+    bb_fullpath:  rootdir = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f529c0015c0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f529c0015c0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xa99b5c10)
+    bb_fullpath:  rootdir = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2050
+    st_ino = 176551
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x64037573
+    st_mtime = 0x6403756c
+    st_ctime = 0x6403756c
+
+bb_readdir(path="/", buf=0x9c001540, filler=0xa9be2ac0, offset=0, fi=0xa9192c30)
+    readdir returned 0x0x7f529c0015f0
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name cbkadal.txt
+calling filler with name .
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f529c0015c0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f529c0015c0
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xa99b5c30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f529c0015c0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f529c0015c0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xa9192c10)
+    bb_fullpath:  rootdir = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2050
+    st_ino = 176551
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x64037573
+    st_mtime = 0x6403756c
+    st_ctime = 0x6403756c
+
+bb_getattr(path="/cbkadal.txt", statbuf=0xa896fc40)
+    bb_fullpath:  rootdir = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir", path = "/cbkadal.txt", fpath = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir/cbkadal.txt"
+    lstat returned 0
+    si:
+    st_dev = 2050
+    st_ino = 176612
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 21
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x6403756c
+    st_mtime = 0x64037572
+    st_ctime = 0x64037572
+
+bb_opendir(path="/", fi=0xa99b5c30)
+    bb_fullpath:  rootdir = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f52a400a5c0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f52a400a5c0
+    lock_owner = 0x0000000000000000
+
+bb_readdir(path="/", buf=0xa4002300, filler=0xa9be2ac0, offset=0, fi=0xa9192c30)
+    readdir returned 0x0x7f52a400a5f0
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name cbkadal.txt
+calling filler with name .
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f52a400a5c0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f52a400a5c0
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xa99b5c30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f52a400a5c0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f52a400a5c0
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xa9192c30)
+    bb_fullpath:  rootdir = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f529c001c00
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f529c001c00
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xa896fc10)
+    bb_fullpath:  rootdir = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2050
+    st_ino = 176551
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x64037573
+    st_mtime = 0x6403756c
+    st_ctime = 0x6403756c
+
+bb_readdir(path="/", buf=0x9c001b80, filler=0xa9be2ac0, offset=0, fi=0xa99b5c30)
+    readdir returned 0x0x7f529c001c30
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name cbkadal.txt
+calling filler with name .
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f529c001c00
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f529c001c00
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xa896fc30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f529c001c00
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f529c001c00
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xa896fc10)
+    bb_fullpath:  rootdir = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2050
+    st_ino = 176551
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x64037573
+    st_mtime = 0x6403756c
+    st_ctime = 0x6403756c
+
+bb_getattr(path="/cbkadal.txt", statbuf=0xa9192c40)
+    bb_fullpath:  rootdir = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir", path = "/cbkadal.txt", fpath = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir/cbkadal.txt"
+    lstat returned 0
+    si:
+    st_dev = 2050
+    st_ino = 176612
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 21
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x6403756c
+    st_mtime = 0x64037572
+    st_ctime = 0x64037572
+
+bb_opendir(path="/", fi=0xa99b5c30)
+    bb_fullpath:  rootdir = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f52a400a5c0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f52a400a5c0
+    lock_owner = 0x0000000000000000
+
+bb_readdir(path="/", buf=0xa4002380, filler=0xa9be2ac0, offset=0, fi=0xa896fc30)
+    readdir returned 0x0x7f52a400a5f0
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name cbkadal.txt
+calling filler with name .
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f52a400a5c0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f52a400a5c0
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xa99b5c30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f52a400a5c0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f52a400a5c0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xa896fc10)
+    bb_fullpath:  rootdir = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2050
+    st_ino = 176551
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x64037573
+    st_mtime = 0x6403756c
+    st_ctime = 0x6403756c
+
+bb_opendir(path="/", fi=0xa9192c30)
+    bb_fullpath:  rootdir = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f529c001c80
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f529c001c80
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xa99b5c10)
+    bb_fullpath:  rootdir = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2050
+    st_ino = 176551
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x64037573
+    st_mtime = 0x6403756c
+    st_ctime = 0x6403756c
+
+bb_readdir(path="/", buf=0x9c001c00, filler=0xa9be2ac0, offset=0, fi=0xa896fc30)
+    readdir returned 0x0x7f529c001cb0
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name cbkadal.txt
+calling filler with name .
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f529c001c80
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f529c001c80
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xa99b5c30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f529c001c80
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f529c001c80
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xa896fc10)
+    bb_fullpath:  rootdir = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2050
+    st_ino = 176551
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x64037573
+    st_mtime = 0x6403756c
+    st_ctime = 0x6403756c
+
+bb_getattr(path="/cbkadal.txt", statbuf=0xa9192c40)
+    bb_fullpath:  rootdir = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir", path = "/cbkadal.txt", fpath = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir/cbkadal.txt"
+    lstat returned 0
+    si:
+    st_dev = 2050
+    st_ino = 176612
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 21
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x6403756c
+    st_mtime = 0x64037572
+    st_ctime = 0x64037572
+
+bb_access(path="/", mask=01)
+    bb_fullpath:  rootdir = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir/"
+
+bb_access(path="/", mask=02)
+    bb_fullpath:  rootdir = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir/"
+
+bb_getattr(path="/.cbkadal.txt.swp", statbuf=0xa9192c40)
+    bb_fullpath:  rootdir = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir", path = "/.cbkadal.txt.swp", fpath = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir/.cbkadal.txt.swp"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_getattr(path="/.cbkadal.txt.swp", statbuf=0xa99b5c40)
+    bb_fullpath:  rootdir = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir", path = "/.cbkadal.txt.swp", fpath = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir/.cbkadal.txt.swp"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_getattr(path="/.cbkadal.txt.swp", statbuf=0xa896fc40)
+    bb_fullpath:  rootdir = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir", path = "/.cbkadal.txt.swp", fpath = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir/.cbkadal.txt.swp"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_mknod(path="/.cbkadal.txt.swp", mode=0100644, dev=0)
+    bb_fullpath:  rootdir = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir", path = "/.cbkadal.txt.swp", fpath = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir/.cbkadal.txt.swp"
+    open returned 5
+    close returned 0
+
+bb_getattr(path="/.cbkadal.txt.swp", statbuf=0xa9192c40)
+    bb_fullpath:  rootdir = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir", path = "/.cbkadal.txt.swp", fpath = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir/.cbkadal.txt.swp"
+    lstat returned 0
+    si:
+    st_dev = 2050
+    st_ino = 176615
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 4096
+    st_blocks = 0
+    st_atime = 0x64037579
+    st_mtime = 0x64037579
+    st_ctime = 0x64037579
+
+bb_open(path"/.cbkadal.txt.swp", fi=0xa99b5cf0)
+    bb_fullpath:  rootdir = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir", path = "/.cbkadal.txt.swp", fpath = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir/.cbkadal.txt.swp"
+    open returned 5
+    fi:
+    flags = 0x00008001
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0x0000000000000000
+
+bb_getxattr(path = "/.cbkadal.txt.swp", name = "security.capability", value = 0x00000000, size = 0)
+    bb_fullpath:  rootdir = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir", path = "/.cbkadal.txt.swp", fpath = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir/.cbkadal.txt.swp"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_write(path="/.cbkadal.txt.swp", buf=0xa9194060, size=1024, offset=0, fi=0xa9192d50)
+    fi:
+    flags = 0x00008001
+    fh_old = 0x00000005
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0x0000000000000000
+    pwrite returned 1024
+
+bb_flush(path="/.cbkadal.txt.swp", fi=0xa99b5cf0)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x00000005
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0x67d9c61c3b3ff10f
+
+bb_release(path="/.cbkadal.txt.swp", fi=0xa896fcf0)
+    fi:
+    flags = 0x00008001
+    fh_old = 0x00000005
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0x0000000000000000
+    close returned 0
+
+bb_open(path"/cbkadal.txt", fi=0xa9192cf0)
+    bb_fullpath:  rootdir = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir", path = "/cbkadal.txt", fpath = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir/cbkadal.txt"
+    open returned 5
+    fi:
+    flags = 0x00008000
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0x0000000000000000
+
+bb_read(path="/cbkadal.txt", buf=0xa4002450, size=4096, offset=0, fi=0xa99b5cf0)
+    fi:
+    flags = 0x00008000
+    fh_old = 0x00000005
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0x0000000000000000
+    pread returned 21
+
+bb_flush(path="/cbkadal.txt", fi=0xa896fcf0)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x00000005
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0x67d9c61c3b3ff10f
+
+bb_release(path="/cbkadal.txt", fi=0xa99b5cf0)
+    fi:
+    flags = 0x00008000
+    fh_old = 0x00000005
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0x0000000000000000
+    close returned 0
+
+bb_access(path="/cbkadal.txt", mask=02)
+    bb_fullpath:  rootdir = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir", path = "/cbkadal.txt", fpath = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir/cbkadal.txt"
+
+bb_getattr(path="/cbkadal.txt", statbuf=0xa896fc10)
+    bb_fullpath:  rootdir = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir", path = "/cbkadal.txt", fpath = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir/cbkadal.txt"
+    lstat returned 0
+    si:
+    st_dev = 2050
+    st_ino = 176612
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 21
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x64037579
+    st_mtime = 0x64037572
+    st_ctime = 0x64037572
+bb_unlink(path="/.cbkadal.txt.swp")
+    bb_fullpath:  rootdir = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir", path = "/.cbkadal.txt.swp", fpath = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir/.cbkadal.txt.swp"
+    unlink returned 0
+
+bb_getattr(path="/", statbuf=0xa896fc10)
+    bb_fullpath:  rootdir = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2050
+    st_ino = 176551
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x64037573
+    st_mtime = 0x6403757a
+    st_ctime = 0x6403757a
+
+bb_getattr(path="/", statbuf=0xa99b5c10)
+    bb_fullpath:  rootdir = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/Meta502/git/sharesp231/Meta502/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2050
+    st_ino = 176551
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x64037573
+    st_mtime = 0x6403757a
+    st_ctime = 0x6403757a
+
+bb_destroy(userdata=0x0c71d2a0)
