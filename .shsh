@@ -1,18 +1,31 @@
-# Sun 05 Mar 2023 15:00
+# REV01: Mon 06 Mar 2023 19:00
+# START: Sun 05 Mar 2023 15:00
 
-WEEK="02"
+WEEK="03"
 
+for II in * ; do
+  echo "======================="
+    for JJ in 03-helloworld-fuse fuse-tutorial-2018-02-04 ; do
+      [ -d $II/$JJ/ ] && {
+         echo "==== ==== ==== $II/$JJ/"
+         git log --pretty=format:'%ad' --date=format:'%Y%m%d %H%M' $II/$JJ/ | cat
+         echo ""
+      }
+  done
+done
+
+
+echo "======================================================"
 for II in * ; do
   [ -f $II/ATTENDANCE/W$WEEK.txt ] && {
     echo -n "$II --- "
     git log $II/ATTENDANCE/W$WEEK.txt | grep '^Date: '
   }
 done
-
 echo "======================="
-
 for II in * ; do
   [ -f $II/ATTENDANCE/W$WEEK.txt ] && {
-    echo "$II 5"
+    echo "$II 3"
   }
 done
+
