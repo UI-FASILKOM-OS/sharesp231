@@ -38,25 +38,24 @@ main(int argc, char *argv[])
     xfnd = 0;
     pstr = NULL;
 
-    while ((opt = getopt(argc, argv, ":p:x")) != -1) {
+    while ((opt = getopt(argc, argv, ":n:b")) != -1) {
         switch (opt) {
-        case 'p': pstr = optarg;        break;
-        case 'x': xfnd++;               break;
+        case 'n': pstr = optarg;        break;
+        case 'b': xfnd++;               break;
         case ':': usageError();
         case '?': usageError();
         default:  usageError();
         }
     }
 
-    if (argc==1)
+    if (argc==1 || optind == argc)
         printf("Hello!\n");
     if (optind < argc)
-        printf("First nonoption argument is \"%s\" at argv[%d]\n",
-                argv[optind], optind);
+        printf("Hello %s!\n", argv[optind]);
     if (xfnd != 0)
-        printf("-x was specified (count=%d)\n", xfnd);
+        printf("It is a beautiful day!\n");
     if (pstr != NULL)
-        printf("-p was specified with the value \"%s\"\n", pstr);
+        printf("Is your name %s?\n", pstr);
     exit(EXIT_SUCCESS);
 }
 
