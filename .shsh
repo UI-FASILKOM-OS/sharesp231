@@ -27,7 +27,7 @@ for II in * ; do
   if [ -f $II/ATTENDANCE/W$WEEK.txt ] ; then
     echo "$II 3"
   else
-    echo "$II 3"
+    [ -d $II/ ] && echo "$II 0"
   fi
 done
 
