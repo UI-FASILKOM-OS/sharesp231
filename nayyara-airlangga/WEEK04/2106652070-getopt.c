@@ -32,30 +32,30 @@ usageError(void)
 int
 main(int argc, char *argv[])
 {
-    int opt, xfnd;
-    char *pstr;
+    int opt, bfnd;
+    char *nstr;
 
-    xfnd = 0;
-    pstr = NULL;
+    bfnd = 0;
+    nstr = NULL;
 
     while ((opt = getopt(argc, argv, ":n:b")) != -1) {
         switch (opt) {
-        case 'n': pstr = optarg;        break;
-        case 'b': xfnd++;               break;
+        case 'n': nstr = optarg;        break;
+        case 'b': bfnd++;               break;
         case ':': usageError();
         case '?': usageError();
         default:  usageError();
         }
     }
 
-    if (argc==1 || optind == argc)
-        printf("Hello!\n");
     if (optind < argc)
         printf("Hello %s!\n", argv[optind]);
-    if (xfnd != 0)
+    else
+        printf("Hello!\n");
+    if (bfnd != 0)
         printf("It is a beautiful day!\n");
-    if (pstr != NULL)
-        printf("Is your name %s?\n", pstr);
+    if (nstr != NULL)
+        printf("Is your name %s?\n", nstr);
     exit(EXIT_SUCCESS);
 }
 
