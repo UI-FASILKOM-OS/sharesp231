@@ -4,7 +4,7 @@
 WEEK="03"
 
 for II in * ; do
-  echo "======================="
+  echo "==== ==== ==== ==== ==== ==== ======================="
     for JJ in 03-helloworld-fuse fuse-tutorial-2018-02-04 ; do
       [ -d $II/$JJ/ ] && {
          echo "==== ==== ==== $II/$JJ/"
