@@ -1,7 +1,8 @@
-# Sat 19 Feb 2022 19:24:02 WIB
+# Mon 06 Mar 2023 15:00
+# Sat 19 Feb 2022 19:00
 
-t_getopt: t_getopt.c
-	gcc -o t_getopt t_getopt.c
+1234567890-getopt: 1234567890-getopt.c
+	gcc -o 1234567890-getopt 1234567890-getopt.c
 
 clean:
-	rm -f t_getopt
+	rm -f 1234567890-getopt
