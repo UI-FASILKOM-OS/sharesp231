@@ -1,7 +1,7 @@
 # Sat 19 Feb 2022 19:24:02 WIB
 
-t_getopt: t_getopt.c
-	gcc -o t_getopt t_getopt.c
+2106652070_getopt: 2106652070_getopt.c
+	gcc -o 2106652070_getopt 2106652070_getopt.c
 
 clean:
-	rm -f t_getopt
+	rm -f 2106652070_getopt
