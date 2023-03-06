@@ -1,4 +1,4 @@
-# REV01: Mon 06 Mar 2023 19:00
+# REV01: Mon 06 Mar 2023 19:30
 # START: Sun 05 Mar 2023 15:00
 
 WEEK="03"
@@ -24,8 +24,10 @@ for II in * ; do
 done
 echo "======================="
 for II in * ; do
-  [ -f $II/ATTENDANCE/W$WEEK.txt ] && {
+  if [ -f $II/ATTENDANCE/W$WEEK.txt ] ; then
     echo "$II 3"
-  }
+  else
+    echo "$II 3"
+  fi
 done
 
