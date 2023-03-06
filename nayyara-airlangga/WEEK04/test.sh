@@ -1,5 +1,7 @@
 NPM="2106652070"
 
+make
+
 ./$NPM-getopt 
 echo "====="
 
@@ -23,3 +25,5 @@ echo "====="
 
 ./$NPM-getopt -n Dodo World -b 
 echo "====="
+
+make clean
