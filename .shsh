@@ -6,7 +6,8 @@ WEEK="04"
 
 for II in * ; do
   echo "==== ==== ==== ==== ==== ==== ======================="
-    for JJ in 03-helloworld-fuse fuse-tutorial-2018-02-04 ; do
+    for JJ in WEEK04 \
+    ; do
       [ -d $II/$JJ/ ] && {
          echo "==== ==== ==== $II/$JJ/"
          git log --pretty=format:'%ad' --date=format:'%Y%m%d %H%M' $II/$JJ/ | cat
