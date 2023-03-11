@@ -1,3 +1,4 @@
+# REV03: Sat 11 Mar 2023 21:00
 # REV02: Tue 07 Mar 2023 14:00
 # REV01: Mon 06 Mar 2023 19:30
 # START: Sun 05 Mar 2023 15:00
@@ -6,7 +7,8 @@ WEEK="04"
 
 for II in * ; do
   echo "==== ==== ==== ==== ==== ==== ======================="
-    for JJ in WEEK04 \
+    # for JJ in WEEK04 \
+    for JJ in 03-helloworld-fuse fuse-tutorial-2018-02-04 \
     ; do
       [ -d $II/$JJ/ ] && {
          echo "==== ==== ==== $II/$JJ/"
