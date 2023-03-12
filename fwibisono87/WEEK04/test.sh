@@ -1,53 +1,101 @@
 #!/bin/bash
 
-# Initialize counters
-tests_run=0
-tests_passed=0
-tests_failed=0
+# Run the first command and store the output
+output=$(./1906350553-getopt)
 
-# Define a function to run a test case
-run_test() {
-  tests_run=$((tests_run+1))
-  output=$(./1906350553-getopt "$1")
-  expected_output="$2"
-  if [ "$output" != "$expected_output" ]; then
-    echo "Error: test case \"$1\" failed: expected '$expected_output', but got '$output'"
-    tests_failed=$((tests_failed+1))
-  else
-    tests_passed=$((tests_passed+1))
-  fi
-}
-
-# Run the test cases
-run_test "" "Hello!"
-run_test "-b" "Hello!
-It is a beautiful day!"
-run_test "-n Dodo" "Hello!
-Is your name  Dodo?"
-run_test "-b -n Dodo" "Hello!
-It is a beautiful day!
-Is your name Dodo?"
-run_test "-n Dodo -b" "Hello!
-It is a beautiful day!
-Is your name Dodo?"
-run_test "-n Dodo -b World" "Hello World!
-It is a beautiful day!
-Is your name Dodo?"
-run_test "World -n Dodo -b" "Hello World!
-It is a beautiful day!
-Is your name Dodo?"
-run_test "-n Dodo World -b" "Hello World!
-It is a beautiful day!
-Is your name Dodo?"
-
-# Print the test results summary
-echo "Tests run: $tests_run"
-echo "Tests passed: $tests_passed"
-echo "Tests failed: $tests_failed"
-
-# Exit with a success status if all tests passed, or a failure status otherwise
-if [ "$tests_failed" -eq 0 ]; then
-  exit 0
-else
+# Check if the output is correct
+if [[ "$output" != "Hello!" ]]; then
+  echo "Error: Expected 'Hello!', but got '$output'"
   exit 1
 fi
+
+# Run the second command and store the output
+output=$(./1906350553-getopt -b)
+
+# Check if the output is correct
+if [[ "$output" != "Hello!
+It is a beautiful day!" ]]; then
+  echo "Error: Expected 'Hello!
+It is a beautiful day!', but got '$output'"
+  exit 1
+fi
+
+# Run the third command and store the output
+output=$(./1906350553-getopt -n Dodo)
+
+# Check if the output is correct
+if [[ "$output" != "Hello!
+Is your name Dodo?" ]]; then
+  echo "Error: Expected 'Hello!
+Is your name Dodo?', but got '$output'"
+  exit 1
+fi
+
+# Run the fourth command and store the output
+output=$(./1906350553-getopt -b -n Dodo)
+
+# Check if the output is correct
+if [[ "$output" != "Hello!
+It is a beautiful day!
+Is your name Dodo?" ]]; then
+  echo "Error: Expected 'Hello!
+It is a beautiful day!
+Is your name Dodo?', but got '$output'"
+  exit 1
+fi
+
+# Run the fifth command and store the output
+output=$(./1906350553-getopt -n Dodo -b)
+
+# Check if the output is correct
+if [[ "$output" != "Hello!
+It is a beautiful day!
+Is your name Dodo?" ]]; then
+  echo "Error: Expected 'Hello!
+It is a beautiful day!
+Is your name Dodo?', but got '$output'"
+  exit 1
+fi
+
+# Run the sixth command and store the output
+output=$(./1906350553-getopt -n Dodo -b World)
+
+# Check if the output is correct
+if [[ "$output" != "Hello World!
+It is a beautiful day!
+Is your name Dodo?" ]]; then
+  echo "Error: Expected 'Hello World!
+It is a beautiful day!
+Is your name Dodo?', but got '$output'"
+  exit 1
+fi
+
+# Run the seventh command and store the output
+output=$(./1906350553-getopt World -n Dodo -b)
+
+# Check if the output is correct
+if [[ "$output" != "Hello World!
+It is a beautiful day!
+Is your name Dodo?" ]]; then
+  echo "Error: Expected 'Hello World!
+It is a beautiful day!
+Is your name Dodo?', but got '$output'"
+  exit 1
+fi
+
+# Run the eighth command and store the output
+output=$(./1906350553-getopt -n Dodo World -b)
+
+# Check if the output is correct
+if [[ "$output" != "Hello World!
+It is a beautiful day!
+Is your name Dodo?" ]]; then
+  echo "Error: Expected 'Hello World!
+It is a beautiful day!
+Is your name Dodo?', but got '$output'"
+  exit 1
+fi
+
+# If all outputs are correct, print success message
+echo "All outputs are correct!"
+exit 0

@@ -2,6 +2,6 @@
 
 SHARE SysProg 231
 
-Please update ATTENDANCE everyweek!
+Please update ATTENDANCE everyweek! :)
 
 ### Versi 02a --- 26-Feb-2023 (cbkadal)

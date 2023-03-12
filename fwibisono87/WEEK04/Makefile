@@ -5,3 +5,5 @@
 
 clean:
 	rm -f 1906350553-getopt
+test:
+	./test.sh
