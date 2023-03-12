@@ -1,0 +1,38 @@
+$ ./1906350553-getopt 
+Hello!
+
+$ ./1906350553-getopt -b
+Hello!
+It is a beautiful day!
+
+$ ./1906350553-getopt -n Dodo
+Hello!
+Is your name Dodo?
+
+$ ./1906350553-getopt -b -n Dodo
+Hello!
+It is a beautiful day!
+Is your name Dodo?
+
+$ ./1906350553-getopt -n Dodo -b
+Hello!
+It is a beautiful day!
+Is your name Dodo?
+
+$ ./1906350553-getopt -n Dodo -b World
+Hello World!
+It is a beautiful day!
+Is your name Dodo?
+
+$ ./1906350553-getopt World -n Dodo -b 
+Hello World!
+It is a beautiful day!
+Is your name Dodo?
+
+$ ./1906350553-getopt -n Dodo World -b 
+Hello World!
+It is a beautiful day!
+Is your name Dodo?
+
+$
+

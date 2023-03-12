@@ -2,7 +2,7 @@
 bb_init()
     conn:
     proto_major = 7
-    proto_minor = 37
+    proto_minor = 38
     async_read = 1
     max_write = 131072
     max_readahead = 131072
@@ -11,21 +11,21 @@ bb_init()
     max_background = 0
     congestion_threshold = 0
     context:
-    fuse = 377317d0
+    fuse = 7f6f17d0
     uid = 0
     gid = 0
     pid = 0
-    private_data = 377302a0
-    logfile = 377312d0
+    private_data = 7f6f02a0
+    logfile = 7f6f12d0
     rootdir = /home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir
     umask = 00000
 
-bb_getattr(path="/", statbuf=0x53ffec10)
+bb_getattr(path="/", statbuf=0x48686c10)
     bb_fullpath:  rootdir = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir/"
     lstat returned 0
     si:
     st_dev = 2049
-    st_ino = 1102596
+    st_ino = 1102782
     st_mode = 040755
     st_nlink = 2
     st_uid = 1000
@@ -34,143 +34,31 @@ bb_getattr(path="/", statbuf=0x53ffec10)
     st_size = 4096
     st_blksize = 4096
     st_blocks = 8
-    st_atime = 0x63fc73d4
-    st_mtime = 0x63fc7359
-    st_ctime = 0x63fc7359
-
-bb_getxattr(path = "/", name = "security.selinux", value = 0x54001e30, size = 255)
-    bb_fullpath:  rootdir = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir/"
-    lgetxattr returned -1
-    ERROR lgetxattr: No data available
-
-bb_getxattr(path = "/", name = "system.posix_acl_access", value = 0x00000000, size = 0)
-    bb_fullpath:  rootdir = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir/"
-    lgetxattr returned -1
-    ERROR lgetxattr: No data available
-
-bb_getxattr(path = "/", name = "system.posix_acl_default", value = 0x00000000, size = 0)
-    bb_fullpath:  rootdir = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir/"
-    lgetxattr returned -1
-    ERROR lgetxattr: No data available
-
-bb_opendir(path="/", fi=0x53ffec30)
-    bb_fullpath:  rootdir = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir/"
-    opendir returned 0x0x7f454c000ee0
-    fi:
-    flags = 0x00018800
-    fh_old = 0x00000000
-    writepage = 0
-    direct_io = 0
-    keep_cache = 0
-    fh = 0x00007f454c000ee0
-    lock_owner = 0x0000000000000000
-
-bb_readdir(path="/", buf=0x4c000e60, filler=0x591d0ac0, offset=0, fi=0x58fa3c30)
-    readdir returned 0x0x7f454c000f10
-calling filler with name bogus.txt
-calling filler with name ..
-calling filler with name .
-    fi:
-    flags = 0x00000000
-    fh_old = 0x7f454c000ee0
-    writepage = 0
-    direct_io = 0
-    keep_cache = 0
-    fh = 0x00007f454c000ee0
-    lock_owner = 0x0000000000000000
-
-bb_getattr(path="/bogus.txt", statbuf=0x53ffec40)
-    bb_fullpath:  rootdir = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir", path = "/bogus.txt", fpath = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir/bogus.txt"
-    lstat returned 0
-    si:
-    st_dev = 2049
-    st_ino = 1102597
-    st_mode = 0100644
-    st_nlink = 1
-    st_uid = 1000
-    st_gid = 1000
-    st_rdev = 0
-    st_size = 11
-    st_blksize = 4096
-    st_blocks = 8
-    st_atime = 0x63fc7359
-    st_mtime = 0x63fc7359
-    st_ctime = 0x63fc7359
-
-bb_getxattr(path = "/bogus.txt", name = "security.selinux", value = 0x54001e30, size = 255)
-    bb_fullpath:  rootdir = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir", path = "/bogus.txt", fpath = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir/bogus.txt"
-    lgetxattr returned -1
-    ERROR lgetxattr: No data available
-
-bb_getxattr(path = "/bogus.txt", name = "system.posix_acl_access", value = 0x00000000, size = 0)
-    bb_fullpath:  rootdir = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir", path = "/bogus.txt", fpath = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir/bogus.txt"
-    lgetxattr returned -1
-    ERROR lgetxattr: No data available
-
-bb_getxattr(path = "/", name = "security.selinux", value = 0x54001e30, size = 255)
-    bb_fullpath:  rootdir = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir/"
-    lgetxattr returned -1
-    ERROR lgetxattr: No data available
-
-bb_getxattr(path = "/", name = "system.posix_acl_access", value = 0x00000000, size = 0)
-    bb_fullpath:  rootdir = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir/"
-    lgetxattr returned -1
-    ERROR lgetxattr: No data available
-
-bb_getxattr(path = "/", name = "system.posix_acl_default", value = 0x00000000, size = 0)
-    bb_fullpath:  rootdir = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir/"
-    lgetxattr returned -1
-    ERROR lgetxattr: No data available
-
-bb_releasedir(path="/", fi=0x58fa3c30)
-    fi:
-    flags = 0x00000000
-    fh_old = 0x7f454c000ee0
-    writepage = 0
-    direct_io = 0
-    keep_cache = 0
-    fh = 0x00007f454c000ee0
-    lock_owner = 0x0000000000000000
-
-bb_getattr(path="/", statbuf=0x53ffec10)
-    bb_fullpath:  rootdir = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir/"
-    lstat returned 0
-    si:
-    st_dev = 2049
-    st_ino = 1102596
-    st_mode = 040755
-    st_nlink = 2
-    st_uid = 1000
-    st_gid = 1000
-    st_rdev = 0
-    st_size = 4096
-    st_blksize = 4096
-    st_blocks = 8
-    st_atime = 0x63fc73d4
-    st_mtime = 0x63fc7359
-    st_ctime = 0x63fc7359
+    st_atime = 0x640447b7
+    st_mtime = 0x640447b5
+    st_ctime = 0x640447b5
 
 bb_access(path="/", mask=01)
     bb_fullpath:  rootdir = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir/"
 
-bb_opendir(path="/", fi=0x53ffec30)
+bb_opendir(path="/", fi=0x48686c30)
     bb_fullpath:  rootdir = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir/"
-    opendir returned 0x0x7f454c009160
+    opendir returned 0x0x7f0740002050
     fi:
     flags = 0x00018800
     fh_old = 0x00000000
     writepage = 0
     direct_io = 0
     keep_cache = 0
-    fh = 0x00007f454c009160
+    fh = 0x00007f0740002050
     lock_owner = 0x0000000000000000
 
-bb_getattr(path="/", statbuf=0x58fa3c10)
+bb_getattr(path="/", statbuf=0x47e63c10)
     bb_fullpath:  rootdir = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir/"
     lstat returned 0
     si:
     st_dev = 2049
-    st_ino = 1102596
+    st_ino = 1102782
     st_mode = 040755
     st_nlink = 2
     st_uid = 1000
@@ -179,148 +67,31 @@ bb_getattr(path="/", statbuf=0x58fa3c10)
     st_size = 4096
     st_blksize = 4096
     st_blocks = 8
-    st_atime = 0x63fc73d4
-    st_mtime = 0x63fc7359
-    st_ctime = 0x63fc7359
+    st_atime = 0x640447b7
+    st_mtime = 0x640447b5
+    st_ctime = 0x640447b5
 
-bb_readdir(path="/", buf=0x4c000f70, filler=0x591d0ac0, offset=0, fi=0x53ffec30)
-    readdir returned 0x0x7f454c009190
+bb_readdir(path="/", buf=0x40001fd0, filler=0x488b3ac0, offset=0, fi=0x48686c30)
+    readdir returned 0x0x7f0740002080
 calling filler with name bogus.txt
+calling filler with name nayyara-airlangga.txt
 calling filler with name ..
 calling filler with name .
     fi:
     flags = 0x00000000
-    fh_old = 0x7f454c009160
+    fh_old = 0x7f0740002050
     writepage = 0
     direct_io = 0
     keep_cache = 0
-    fh = 0x00007f454c009160
+    fh = 0x00007f0740002050
     lock_owner = 0x0000000000000000
 
-bb_releasedir(path="/", fi=0x53ffec30)
-    fi:
-    flags = 0x00000000
-    fh_old = 0x7f454c009160
-    writepage = 0
-    direct_io = 0
-    keep_cache = 0
-    fh = 0x00007f454c009160
-    lock_owner = 0x0000000000000000
-
-bb_getattr(path="/", statbuf=0x58fa3c10)
-    bb_fullpath:  rootdir = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir/"
-    lstat returned 0
-    si:
-    st_dev = 2049
-    st_ino = 1102596
-    st_mode = 040755
-    st_nlink = 2
-    st_uid = 1000
-    st_gid = 1000
-    st_rdev = 0
-    st_size = 4096
-    st_blksize = 4096
-    st_blocks = 8
-    st_atime = 0x63fc73d4
-    st_mtime = 0x63fc7359
-    st_ctime = 0x63fc7359
-
-bb_getattr(path="/", statbuf=0x53ffec10)
-    bb_fullpath:  rootdir = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir/"
-    lstat returned 0
-    si:
-    st_dev = 2049
-    st_ino = 1102596
-    st_mode = 040755
-    st_nlink = 2
-    st_uid = 1000
-    st_gid = 1000
-    st_rdev = 0
-    st_size = 4096
-    st_blksize = 4096
-    st_blocks = 8
-    st_atime = 0x63fc73d4
-    st_mtime = 0x63fc7359
-    st_ctime = 0x63fc7359
-
-bb_getattr(path="/", statbuf=0x58fa3c10)
-    bb_fullpath:  rootdir = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir/"
-    lstat returned 0
-    si:
-    st_dev = 2049
-    st_ino = 1102596
-    st_mode = 040755
-    st_nlink = 2
-    st_uid = 1000
-    st_gid = 1000
-    st_rdev = 0
-    st_size = 4096
-    st_blksize = 4096
-    st_blocks = 8
-    st_atime = 0x63fc73d4
-    st_mtime = 0x63fc7359
-    st_ctime = 0x63fc7359
-
-bb_opendir(path="/", fi=0x53ffec30)
-    bb_fullpath:  rootdir = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir/"
-    opendir returned 0x0x7f454c009160
-    fi:
-    flags = 0x00018800
-    fh_old = 0x00000000
-    writepage = 0
-    direct_io = 0
-    keep_cache = 0
-    fh = 0x00007f454c009160
-    lock_owner = 0x0000000000000000
-
-bb_readdir(path="/", buf=0x4c001400, filler=0x591d0ac0, offset=0, fi=0x58fa3c30)
-    readdir returned 0x0x7f454c009190
-calling filler with name bogus.txt
-calling filler with name ..
-calling filler with name .
-    fi:
-    flags = 0x00000000
-    fh_old = 0x7f454c009160
-    writepage = 0
-    direct_io = 0
-    keep_cache = 0
-    fh = 0x00007f454c009160
-    lock_owner = 0x0000000000000000
-
-bb_releasedir(path="/", fi=0x58fa3c30)
-    fi:
-    flags = 0x00000000
-    fh_old = 0x7f454c009160
-    writepage = 0
-    direct_io = 0
-    keep_cache = 0
-    fh = 0x00007f454c009160
-    lock_owner = 0x0000000000000000
-
-bb_getattr(path="/", statbuf=0x53ffec10)
-    bb_fullpath:  rootdir = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir/"
-    lstat returned 0
-    si:
-    st_dev = 2049
-    st_ino = 1102596
-    st_mode = 040755
-    st_nlink = 2
-    st_uid = 1000
-    st_gid = 1000
-    st_rdev = 0
-    st_size = 4096
-    st_blksize = 4096
-    st_blocks = 8
-    st_atime = 0x63fc73d4
-    st_mtime = 0x63fc7359
-    st_ctime = 0x63fc7359
-
-bb_getattr(path="/bogus.txt", statbuf=0x58fa3c40)
+bb_getattr(path="/bogus.txt", statbuf=0x47e63c40)
     bb_fullpath:  rootdir = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir", path = "/bogus.txt", fpath = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir/bogus.txt"
     lstat returned 0
     si:
     st_dev = 2049
-    st_ino = 1102597
+    st_ino = 1102783
     st_mode = 0100644
     st_nlink = 1
     st_uid = 1000
@@ -329,44 +100,91 @@ bb_getattr(path="/bogus.txt", statbuf=0x58fa3c40)
     st_size = 11
     st_blksize = 4096
     st_blocks = 8
-    st_atime = 0x63fc7359
-    st_mtime = 0x63fc7359
-    st_ctime = 0x63fc7359
+    st_atime = 0x640444d9
+    st_mtime = 0x63fc75a0
+    st_ctime = 0x63fc75a0
 
-bb_getattr(path="/bogus.txt", statbuf=0x53ffec40)
+bb_getxattr(path = "/bogus.txt", name = "security.selinux", value = 0x40001e30, size = 255)
     bb_fullpath:  rootdir = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir", path = "/bogus.txt", fpath = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir/bogus.txt"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_getxattr(path = "/bogus.txt", name = "system.posix_acl_access", value = 0x38000ef0, size = 4096)
+    bb_fullpath:  rootdir = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir", path = "/bogus.txt", fpath = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir/bogus.txt"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_getattr(path="/nayyara-airlangga.txt", statbuf=0x48686c40)
+    bb_fullpath:  rootdir = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir", path = "/nayyara-airlangga.txt", fpath = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir/nayyara-airlangga.txt"
     lstat returned 0
     si:
     st_dev = 2049
-    st_ino = 1102597
+    st_ino = 1049292
     st_mode = 0100644
     st_nlink = 1
     st_uid = 1000
     st_gid = 1000
     st_rdev = 0
-    st_size = 11
+    st_size = 31
     st_blksize = 4096
     st_blocks = 8
-    st_atime = 0x63fc7359
-    st_mtime = 0x63fc7359
-    st_ctime = 0x63fc7359
+    st_atime = 0x640447b9
+    st_mtime = 0x640447b5
+    st_ctime = 0x640447b5
 
-bb_getxattr(path = "/bogus.txt", name = "security.selinux", value = 0x54001e30, size = 255)
-    bb_fullpath:  rootdir = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir", path = "/bogus.txt", fpath = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir/bogus.txt"
+bb_getxattr(path = "/nayyara-airlangga.txt", name = "security.selinux", value = 0x38000c30, size = 255)
+    bb_fullpath:  rootdir = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir", path = "/nayyara-airlangga.txt", fpath = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir/nayyara-airlangga.txt"
     lgetxattr returned -1
     ERROR lgetxattr: No data available
 
-bb_getxattr(path = "/bogus.txt", name = "system.posix_acl_access", value = 0x00000000, size = 0)
-    bb_fullpath:  rootdir = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir", path = "/bogus.txt", fpath = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir/bogus.txt"
+bb_getxattr(path = "/nayyara-airlangga.txt", name = "system.posix_acl_access", value = 0x4000a7f0, size = 4096)
+    bb_fullpath:  rootdir = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir", path = "/nayyara-airlangga.txt", fpath = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir/nayyara-airlangga.txt"
     lgetxattr returned -1
     ERROR lgetxattr: No data available
 
-bb_getattr(path="/", statbuf=0x58fa3c10)
+bb_getxattr(path = "/", name = "security.selinux", value = 0x38000c30, size = 255)
+    bb_fullpath:  rootdir = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir/"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_getxattr(path = "/", name = "system.posix_acl_access", value = 0x4000a880, size = 4096)
+    bb_fullpath:  rootdir = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir/"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_getxattr(path = "/", name = "system.posix_acl_default", value = 0x380011b0, size = 4096)
+    bb_fullpath:  rootdir = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir/"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_releasedir(path="/", fi=0x47e63c30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f0740002050
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f0740002050
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0x48686c30)
+    bb_fullpath:  rootdir = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir/"
+    opendir returned 0x0x7f074000a7f0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f074000a7f0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0x47e63c10)
     bb_fullpath:  rootdir = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir/"
     lstat returned 0
     si:
     st_dev = 2049
-    st_ino = 1102596
+    st_ino = 1102782
     st_mode = 040755
     st_nlink = 2
     st_uid = 1000
@@ -375,23 +193,250 @@ bb_getattr(path="/", statbuf=0x58fa3c10)
     st_size = 4096
     st_blksize = 4096
     st_blocks = 8
-    st_atime = 0x63fc73d4
-    st_mtime = 0x63fc7359
-    st_ctime = 0x63fc7359
+    st_atime = 0x640447b7
+    st_mtime = 0x640447b5
+    st_ctime = 0x640447b5
 
-bb_getxattr(path = "/", name = "security.selinux", value = 0x4c000c30, size = 255)
+bb_readdir(path="/", buf=0x400020e0, filler=0x488b3ac0, offset=0, fi=0x48686c30)
+    readdir returned 0x0x7f074000a820
+calling filler with name bogus.txt
+calling filler with name nayyara-airlangga.txt
+calling filler with name ..
+calling filler with name .
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f074000a7f0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f074000a7f0
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0x48686c30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f074000a7f0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f074000a7f0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0x47e63c10)
     bb_fullpath:  rootdir = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1102782
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x640447b7
+    st_mtime = 0x640447b5
+    st_ctime = 0x640447b5
+
+bb_getattr(path="/nayyara-airlangga.txt", statbuf=0x48686c40)
+    bb_fullpath:  rootdir = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir", path = "/nayyara-airlangga.txt", fpath = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir/nayyara-airlangga.txt"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1049292
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 31
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x640447b9
+    st_mtime = 0x640447b5
+    st_ctime = 0x640447b5
+
+bb_getxattr(path = "/nayyara-airlangga.txt", name = "security.selinux", value = 0x38000c30, size = 255)
+    bb_fullpath:  rootdir = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir", path = "/nayyara-airlangga.txt", fpath = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir/nayyara-airlangga.txt"
     lgetxattr returned -1
     ERROR lgetxattr: No data available
 
-bb_getxattr(path = "/", name = "system.posix_acl_access", value = 0x00000000, size = 0)
-    bb_fullpath:  rootdir = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir/"
+bb_getxattr(path = "/nayyara-airlangga.txt", name = "system.posix_acl_access", value = 0x40002570, size = 4096)
+    bb_fullpath:  rootdir = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir", path = "/nayyara-airlangga.txt", fpath = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir/nayyara-airlangga.txt"
     lgetxattr returned -1
     ERROR lgetxattr: No data available
 
-bb_getxattr(path = "/", name = "system.posix_acl_default", value = 0x00000000, size = 0)
+bb_opendir(path="/", fi=0x47e63c30)
     bb_fullpath:  rootdir = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir/"
-    lgetxattr returned -1
-    ERROR lgetxattr: No data available
+    opendir returned 0x0x7f07380012c0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f07380012c0
+    lock_owner = 0x0000000000000000
 
-bb_destroy(userdata=0x377302a0)
+bb_getattr(path="/", statbuf=0x48686c10)
+    bb_fullpath:  rootdir = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1102782
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x640447b7
+    st_mtime = 0x640447b5
+    st_ctime = 0x640447b5
+
+bb_readdir(path="/", buf=0x38001240, filler=0x488b3ac0, offset=0, fi=0x47e63c30)
+    readdir returned 0x0x7f07380012f0
+calling filler with name bogus.txt
+calling filler with name nayyara-airlangga.txt
+calling filler with name ..
+calling filler with name .
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f07380012c0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f07380012c0
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0x47e63c30)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f07380012c0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f07380012c0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0x48686c10)
+    bb_fullpath:  rootdir = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1102782
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x640447b7
+    st_mtime = 0x640447b5
+    st_ctime = 0x640447b5
+
+bb_getattr(path="/nayyara-airlangga.txt", statbuf=0x47e63c40)
+    bb_fullpath:  rootdir = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir", path = "/nayyara-airlangga.txt", fpath = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir/nayyara-airlangga.txt"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1049292
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 31
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x640447b9
+    st_mtime = 0x640447b5
+    st_ctime = 0x640447b5
+
+bb_open(path"/nayyara-airlangga.txt", fi=0x48686cf0)
+    bb_fullpath:  rootdir = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir", path = "/nayyara-airlangga.txt", fpath = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir/nayyara-airlangga.txt"
+    open returned 5
+    fi:
+    flags = 0x00008000
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0x0000000000000000
+
+bb_read(path="/nayyara-airlangga.txt", buf=0x38001310, size=4096, offset=0, fi=0x47e63cf0)
+    fi:
+    flags = 0x00008000
+    fh_old = 0x00000005
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0x0000000000000000
+    pread returned 31
+
+bb_flush(path="/nayyara-airlangga.txt", fi=0x48686cf0)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x00000005
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0x6fb2e191909db784
+
+bb_release(path="/nayyara-airlangga.txt", fi=0x47e63cf0)
+    fi:
+    flags = 0x00008000
+    fh_old = 0x00000005
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0x0000000000000000
+    close returned 0
+
+bb_getattr(path="/", statbuf=0x48686c10)
+    bb_fullpath:  rootdir = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1102782
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x640447b7
+    st_mtime = 0x640447b5
+    st_ctime = 0x640447b5
+
+bb_getattr(path="/", statbuf=0x47e63c10)
+    bb_fullpath:  rootdir = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir", path = "/", fpath = "/home/nayyara-airlangga/git/sharesp231/nayyara-airlangga/fuse-tutorial-2018-02-04/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1102782
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x640447b7
+    st_mtime = 0x640447b5
+    st_ctime = 0x640447b5
+
+bb_destroy(userdata=0x7f6f02a0)
