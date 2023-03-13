@@ -7,9 +7,8 @@
 
 int main(int argc, char const *argv[])
 {  
-  char uname[10];
-  unamme = "haikalrmn";
-  sprintf("%s", uname);
+  char GITHUB_ACCOUNT[10] = "haikalrmn";
+  sprintf("%s", GITHUB_ACCOUNT);
   
   return 0;
 }
