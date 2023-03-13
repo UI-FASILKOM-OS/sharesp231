@@ -5,5 +5,5 @@
 #include "share.h"
 
 void dummy() {
-    printf(GITHUB_ACCOUNT);
+    printf("%s\n", GITHUB_ACCOUNT);
 }

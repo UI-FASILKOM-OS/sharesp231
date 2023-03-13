@@ -1,6 +1,7 @@
 # How to run
 
 ```
+touch NEWS README AUTHORS ChangeLog
 aclocal
 autoconf
 automake --add-missing
