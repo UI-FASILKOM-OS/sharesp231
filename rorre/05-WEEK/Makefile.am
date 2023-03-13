@@ -28,4 +28,5 @@ superclean:
 	rm -rf compile config.guess config.log config.status
 	rm -rf config.sub configure depcomp install-sh ltmain.sh
 	rm -rf missing prog1 prog1.o prog2 prog2.o share.o
-
+.PHONY = superclean
+EXTRA_DIST = superclean
