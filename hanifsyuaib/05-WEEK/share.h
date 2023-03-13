@@ -5,7 +5,7 @@
 #ifndef SHARE_H
 #define SHARE_H
 
-extern void dummy();
 #define GITHUB_ACCOUNT "hanifsyuaib"
+extern void dummy();
 
 #endif /* SHARE_H */
