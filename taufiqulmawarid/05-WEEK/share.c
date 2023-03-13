@@ -4,5 +4,5 @@
 #include <stdio.h>
 
 void dummy() {
-    printf("taufiqulmawarid\n");
+    printf(GITHUB_ACCOUNT);
 }

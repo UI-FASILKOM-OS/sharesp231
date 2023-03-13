@@ -7,4 +7,7 @@
 /* Declarations go here */
 void dummy();
 
+/* Define variable */
+#define GITHUB_ACCOUNT "taufiqulmawarid"
+
 #endif /* MYHEADER_H */
