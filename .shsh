@@ -20,6 +20,7 @@ for II in * ; do
   done
 done
 
+exit
 
 echo "======================================================"
 for II in * ; do
