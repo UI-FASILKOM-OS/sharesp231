@@ -6,5 +6,5 @@
 #include <stdio.h>
 
 void dummy() {
-    printf("rorre");
+    printf("%s\n", GITHUB_ACCOUNT);
 }
