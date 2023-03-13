@@ -7,9 +7,9 @@
 
 AM_CFLAGS = -std=gnu18
 bin_PROGRAMS = prog1 prog2
-prog1_SOURCES = prog1.c share.c
+prog1_SOURCES = prog1.c
 prog1_LDADD = share.o
-prog2_SOURCES = prog.c share.c
+prog2_SOURCES = prog2.c
 prog2_LDADD = share.o
 .PHONY: superclean
 superclean: clean
