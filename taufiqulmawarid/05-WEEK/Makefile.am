@@ -3,4 +3,7 @@
 #        1         2         3         4         5         6         7
 # 34567890123456789012345678901234567890123456789012345678901234567890
 # Please complete this file.
-AUTOMAKE_OPTIONS = foreign
+bin_PROGRAMS = prog1 prog2
+prog1_SOURCES = prog1.c share.c
+prog2_SOURCES = prog2.c share.c
+INCLUDES = -I.
