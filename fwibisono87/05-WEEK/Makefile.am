@@ -8,10 +8,6 @@ AM_CFLAGS = -std=gnu18
 # Generate the share.h header file
 BUILT_SOURCES = share.h
 
-# Rule to generate the share.h header file
-share.h:
-    echo "#define GITHUB_ACCOUNT \"fwibisono87\"" > share.h
-
 # Remove the share.h header file
 clean-local:
     rm -f share.h

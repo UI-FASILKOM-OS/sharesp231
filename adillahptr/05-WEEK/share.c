@@ -2,3 +2,16 @@
 // START: Sat 11 Mar 2023 22:00
 // Please complete this file.
 
+#include <stdio.h>
+#include "share.h"
+
+void dummy()
+{
+	printf("%s\n", GITHUB_ACCOUNT);
+}
+
+int main(int argc, char const *argv[])
+{
+	dummy();
+	return 0;
+}
