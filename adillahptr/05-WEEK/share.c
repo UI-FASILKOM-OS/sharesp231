@@ -3,10 +3,11 @@
 // Please complete this file.
 
 #include <stdio.h>
+#include "share.h"
 
 void dummy()
 {
-	printf("adillahptr\n");
+	printf("%s\n", GITHUB_ACCOUNT);
 }
 
 int main(int argc, char const *argv[])
