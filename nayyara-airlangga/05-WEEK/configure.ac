@@ -9,7 +9,7 @@ AC_PROG_CC
 AC_PROG_INSTALL
 
 # Check for share.h header file
-AC_CHECK_HEADERS([SHARE_H])
+AC_CHECK_HEADERS([share.h])
 
 AC_CONFIG_HEADERS([config.h])
 AC_CONFIG_FILES([Makefile])
