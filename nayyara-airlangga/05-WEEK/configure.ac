@@ -8,9 +8,6 @@ AM_INIT_AUTOMAKE([-Wall -Werror foreign])
 AC_PROG_CC
 AC_PROG_INSTALL
 
-# Check for share.h header file
-AC_CHECK_HEADERS([share.h])
-
 AC_CONFIG_HEADERS([config.h])
 AC_CONFIG_FILES([Makefile])
 AC_OUTPUT
