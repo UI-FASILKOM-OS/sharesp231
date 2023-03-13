@@ -8,3 +8,9 @@ prog1_SOURCES = prog1.c share.c
 prog2_SOURCES = prog2.c share.c
 AM_CPPFLAGS = -I.
 AM_CFLAGS = -std=gnu18
+.PHONY: superclean
+superclean: clean
+	rm -rf autom4te.cache aclocal.m4 compile config.h config.h.in
+	rm -rf config.log config.status Makefile configure .deps/
+	rm -rf depcomp install-sh Makefile.in missing stamp-h1
+EXTRA_DIST = superclean
