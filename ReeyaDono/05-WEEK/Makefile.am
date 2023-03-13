@@ -12,3 +12,8 @@ prog2_SOURCES = prog2.c share.c share.h
 prog2_LDADD = 
 
 AM_CFLAGS = -std=gnu18
+
+# Remove all generated files
+.PHONY: superclean
+superclean:
+	rm -rf Makefile config.* depcomp install-sh missing aclocal.m4 compile stamp-h1 AUTHORS autom4te.cache Changelog configure COPYING .deps INSTALL .Makefile.am.swp Makefile.in NEWS prog1 prog1.o prog2 prog2.o README share.o ChangeLog
