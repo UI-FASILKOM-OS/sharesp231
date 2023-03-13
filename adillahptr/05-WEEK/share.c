@@ -9,9 +9,3 @@ void dummy()
 {
 	printf("%s\n", GITHUB_ACCOUNT);
 }
-
-int main(int argc, char const *argv[])
-{
-	dummy();
-	return 0;
-}
