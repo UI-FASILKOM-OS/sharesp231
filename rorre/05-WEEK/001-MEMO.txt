@@ -1,0 +1,10 @@
+# START: Mon 13 Mar 2023 16:15
+
+touch NEWS README AUTHORS ChangeLog
+autoreconf --install
+autoconf
+automake
+./configure
+make
+./prog1
+./prog2
