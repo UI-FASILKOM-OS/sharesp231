@@ -2,7 +2,8 @@
 // START: Sat 11 Mar 2023 22:00
 // Please complete this file.
 #include <stdio.h>
+#include "share.h"
 
 void dummy() {
-    printf("taufiqulmawarid\n");
+    printf(GITHUB_ACCOUNT);
 }

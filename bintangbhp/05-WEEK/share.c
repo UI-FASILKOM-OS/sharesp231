@@ -6,5 +6,5 @@
 #include "share.h"
 
 void dummy(){
-    printf("bintangbhp");
+    printf("%s\n", GITHUB_ACCOUNT);
 }

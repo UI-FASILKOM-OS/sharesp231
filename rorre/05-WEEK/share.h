@@ -3,4 +3,11 @@
 // START: Sat 11 Mar 2023 22:00
 // Please complete this file.
 
+#ifndef SHARE_H_
+#define SHARE_H_
+
+#define GITHUB_ACCOUNT "rorre"
 void dummy();
+
+#endif
+
