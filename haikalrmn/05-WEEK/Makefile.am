@@ -4,8 +4,15 @@
 # 34567890123456789012345678901234567890123456789012345678901234567890
 # Please complete this file.
 
-bin_PROGRAMS = share
-share_SOURCES = share.c
+bin_PROGRAMS = prog1 prog2
+
+prog1_SOURCES = prog1.c share.c share.h
+prog1_LOADD = 
+
+prog2_SOURCES =prog2.c share.c share.h
+prog2_LOADD = 
+
+AM_FLAGS = -std=gnu18
 
 clean-locoal: 
 	@rm config.status configure config.log
