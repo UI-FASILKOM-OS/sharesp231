@@ -4,8 +4,12 @@
 # 34567890123456789012345678901234567890123456789012345678901234567890
 # Please complete this file.
 
-2006597891-getopt: 2006597891-getopt.c
-        gcc -o 2006597891-getopt 2006597891-getopt.c
+bin_PROGRAMS = share
+share_SOURCES = share.c
 
-clean:
-        rm -f 2006597891-getopt
+clean-locoal: 
+	@rm config.status configure config.log
+	@rm Makefile
+	@rm -r automa4te.cache/
+	@rm aclocal.m4
+	@rm compile install-sh missing Makefile.in
