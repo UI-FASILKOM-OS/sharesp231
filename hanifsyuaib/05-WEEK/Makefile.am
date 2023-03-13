@@ -4,3 +4,14 @@
 # 34567890123456789012345678901234567890123456789012345678901234567890
 # Please complete this file.
 
+bin_PROGRAMS = prog1 prog2
+AM_CPPFLAGS = -I.
+
+prog1_SOURCES = prog1.c
+prog1_LDADD = share.o
+
+prog2_SOURCES = prog2.c
+prog2_LDADD = share.o
+
+noinst_LIBRARIES = libshare.a
+libshare_a_SOURCES = share.c
