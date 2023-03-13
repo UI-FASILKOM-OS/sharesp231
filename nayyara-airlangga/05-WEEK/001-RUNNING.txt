@@ -1,0 +1,9 @@
+# START: Mon 13 Mar 2023 16:30
+
+autoreconf --install
+autoconf
+automake
+./configure
+make
+./prog1
+./prog2
