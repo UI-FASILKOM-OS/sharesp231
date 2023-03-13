@@ -1,6 +1,8 @@
-#include <stdio.h>
 #include "share.h"
 
-void dummy() {
-    printf("My GitHub account name is: %s\n", GITHUB_ACCOUNT);
+int main() {
+    // Call the dummy function from share.c
+    dummy();
+
+    return 0;
 }
